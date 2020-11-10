@@ -1,0 +1,348 @@
+extends ../_templateindex
+
+block variables
+  - var title = 'Главная'
+block content
+  .wrapper
+    header.header
+      .container
+        .header__row
+          a(href="#").header__logo
+            img(src='./assets/img/logo.png').header__logo-img
+          a(href="tel:+74951502898").header__phone 8 (495) 150 28 98
+
+    main.main
+      section.section.section1
+        .section__bg
+          img(src='./assets/img/bg1.jpg').section__bg-pic
+        .container.container_bg
+          .page__content
+            h1.page__title НПЦ МТ АРМЕД
+            .page__text Открываем новую эру отечественного производства медицинского оборудования
+            a(href="#").page__button Смотреть видео
+
+      section.section.section2
+        .container
+          .section__content
+            h2.section__title Научно-производственный центр медицинской техники “Армед”
+            .section__list
+              .section__item
+                img(src='./assets/img/11.png').section__item-img
+                .section__item-text Медицинское оборудование отечественного производства
+              .section__item
+                img(src='./assets/img/12.png').section__item-img
+                .section__item-text С 2013 года на российском рынке
+              .section__item
+                img(src='./assets/img/13.png').section__item-img
+                .section__item-text Сделано в России
+              .section__item
+                img(src='./assets/img/14.png').section__item-img
+                .section__item-text Бренд, которому доверяют миллионы
+              .section__item
+                img(src='./assets/img/15.png').section__item-img
+                .section__item-text Свои низкие цены независимо от курса валют
+
+            .section__text НПЦ МТ “Армед” разрабатывает и производит товары для защиты и поддержки здоровья, спасения жизни и реабилитации
+
+
+      .section.section-wrap
+        section.section.section3.section3_1
+          .section__bg
+            img(src='./assets/img/bg2.jpg').section__bg-pic
+          .container.container_bg
+            .section__content
+              .section__blur
+              h2.section__title Крупнейший в России производитель
+              .section__text Рециркуляторов закрытого типа для разнопрофильных объектов
+        section.section.section3.section3_2
+          .section__bg
+            img(src='./assets/img/bg3.jpg').section__bg-pic
+          .container.container_bg
+            .section__content
+              .section__blur
+              h2.section__title Динамично растущее производство в Подмосковье
+              .section__text 8 линий сборки запущено в 2020 г., новый цех на 2 Га заработает в 2021 г.
+        section.section.section3.section3_3
+          .section__bg
+            img(src='./assets/img/bg4.jpg').section__bg-pic
+          .container.container_bg
+            .section__content
+              .section__blur
+              h2.section__title Большая команда профессионалов
+              .section__text Более 120 инженеров-конструкторов, технологов, менеджеров и сборщико
+        section.section.section3.section3_4
+          .section__bg
+            img(src='./assets/img/bg5.jpg').section__bg-pic
+          .container.container_bg
+            .section__content
+              .section__blur
+              h2.section__title Ежедневные объемы производства
+              .section__text Более 1 500 медицинских изделий изготавливаем ежедневно
+        section.section.section3.section3_5
+          .section__bg
+            img(src='./assets/img/bg6.jpg').section__bg-pic
+          .container.container_bg
+            .section__content
+              .section__blur
+              h2.section__title Собственная метрологическая лаборатория
+              .section__text Оперативная поверка медицинских приборов
+
+
+      section.section.section4
+        .container
+          h2.section__title Наша продукция
+          .section__row
+            .section__content
+              .section__subtitle Рециркуляторы закрытого типа “Армед”
+              .options__list
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text 1-, 2- и 3-ламповые приборы
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Металлический корпус
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Надежная конструкция
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Простое управление
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Низкий уровень шума вентиляторов
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Производительность от 30 до 100 куб.м
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Оптимальный функционал
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Безопасная работа в присутствии людей
+            .section__img
+              img(src='./assets/img/41.png').section__img-pic
+          .section__list
+            .section__item
+              .section__card
+                .section__card-decor
+                  img(src='./assets/img/basket.png').section__card-decor-pic
+                img(src='./assets/img/51.jpg').section__card-img
+                .section__card-text Армед CH 111-115 М/1
+                .section__card-price
+                  del 999 ₽
+                  ins 699 ₽
+            .section__item
+              .section__card
+                .section__card-decor
+                  img(src='./assets/img/basket.png').section__card-decor-pic
+                img(src='./assets/img/51.jpg').section__card-img
+                .section__card-text Армед CH 111-130 М/1
+                .section__card-price
+                  ins 10 006 99 ₽
+            .section__item
+              .section__card
+                .section__card-decor
+                  img(src='./assets/img/basket.png').section__card-decor-pic
+                img(src='./assets/img/51.jpg').section__card-img
+                .section__card-text Армед CH 211-115 М/1 и еще немножечко
+                .section__card-price
+                  del 999 ₽
+                  ins 10 006 99 ₽
+            .section__item
+              .section__card
+                .section__card-decor
+                  img(src='./assets/img/basket.png').section__card-decor-pic
+                img(src='./assets/img/51.jpg').section__card-img
+                .section__card-text Армед CH 211-130 М/1
+                .section__card-price
+                  del 999 ₽
+                  ins 10 006 99 ₽
+            .section__item
+              .section__card
+                .section__card-decor
+                  img(src='./assets/img/basket.png').section__card-decor-pic
+                img(src='./assets/img/51.jpg').section__card-img
+                .section__card-text Армед CH 311-115 М/1
+                .section__card-price
+                  del 999 ₽
+                  ins 10 006 99 ₽
+            .section__item
+              .section__card
+                .section__card-decor
+                  img(src='./assets/img/basket.png').section__card-decor-pic
+                img(src='./assets/img/51.jpg').section__card-img
+                .section__card-text Армед CH 311-130 М
+                .section__card-price
+                  del 999 ₽
+                  ins 10 006 99 ₽
+
+      section.section.section4
+        .container
+          h2.section__title Новинка 2021
+          .section__row
+            .section__content
+              .section__subtitle Aircube 115 S
+              .options__list
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text 1-ламповый рециркулятор для небольших помещений
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Самая компактная и легкая модель в линейке “Армед”
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Защитный пластиковый корпус
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Стильный дизайн для любого интерьера
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text 2 элегантные стойки в основании
+            .section__img
+              img(src='./assets/img/61.png').section__img-pic
+
+      section.section.section5
+        .container
+          h2.section__title Эффективность рециркуляторов научно подтверждена
+          .section__row
+            a(href="#").section__img
+              img(src='./assets/img/71.png').section__img-pic
+            .section__content
+              .section__text В 2020 году ООО “НПЦ МТ “Армед” получило положительный ответ от ФБУН НИИ Дезинфектологии Роспотребнадзора на запрос об эффективности рециркуляторов в профилактике заболеваний, вызванных коронавирусом, другими вирусами и бактериями
+
+      section.section.section4
+        .container
+          h2.section__title Механические кровати
+          .section__row
+            .section__content
+              .section__subtitle РС105-Б
+              .options__list
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Удобная механическая регулировка головной, тазобедренной и голеностопной секций
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Складные рычаги управления
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Грузоподъемность – до 250 кг
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Складные металлические боковые ограждения с надежными фиксаторами
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Стойка для подтягивания и инфузионная стойка в комплекте
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Маневренные колеса с тормозными педалями
+            .section__img
+              img(src='./assets/img/81.png').section__img-pic
+
+
+
+
+
+      section.section.section5
+        .container
+          h2.section__title В чем сила "Армед"?"
+          .section__row
+            .section__img
+              img(src='./assets/img/91.png').section__img-pic
+            .section__content
+              .section__subtitle Стандарты качества
+              .section__text Мы внедрили в производство стандарты качества в соответствии с ГОСТ Р ИСО 9001:2015
+
+      section.section.section5.reverse
+        .container
+          .section__row
+            .section__content
+              .section__subtitle Сертифицированное оборудование
+              .section__text Все товары, которые мы производим, проходят обязательную сертификацию, имеют регистрационные удостоверения от Росздравнадзора
+            .section__img
+              img(src='./assets/img/92.png').section__img-pic
+
+      section.section.section4.reverse
+        .container
+          h2.section__title Сотрудничество с нами
+          .section__text Развивайтесь, стройте бизнес, оснащайте больницы и другие медицинские учреждения вместе с НПЦ МТ “Армед”
+          .section__list
+            .section__item.min-shadow
+              .section__info
+                .section__info-decor
+                  img(src='./assets/img/101.png').section__card-decor-pic
+                .section__info-text #[span С нами уже сотрудничают] более 11 000 медицинских учреждений и сотни торговых компаний
+            .section__item.min-shadow
+              .section__info
+                .section__info-decor
+                  img(src='./assets/img/102.png').section__card-decor-pic
+                .section__info-text #[span Наш бренд ассоциируется] у покупателей с высоким качеством изделий и доступными ценами
+            .section__item.min-shadow
+              .section__info
+                .section__info-decor
+                  img(src='./assets/img/103.png').section__card-decor-pic
+                .section__info-text #[span Мы остаемся клиентоориентированной компанией] даже в текущей ситуации нестабильности
+          .section__row
+            .section__img
+              img(src='./assets/img/111.png').section__img-pic
+              img(src='./assets/img/112.png').section__img-pic
+            .section__content
+              .section__subtitle Для наших партнеров:
+              .options__list
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Гибкая система скидок
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Производство и отгрузка в поставленные сроки
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Собственный автопарк и услуги транспортных компаний
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Доставка заказов по всей России и в страны СНГ
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Самовывоз со склада в Московской области
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Бесплатное обучение сотрудников
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Рекламная поддержка в медиа-сфере
+                .options__item
+                  img(src='./assets/img/icon.png').options__item-icon
+                  .options__item-text Информационная и рекламная печатная продукция
+
+
+
+      section.section.section6
+        .container
+          h2.section__title Наши эксклюзивные партнеры
+          .section__list
+            a(href="#").section__link
+              img(src='./assets/img/dobrota.png').section__link-img
+            a(href="#").section__link
+              img(src='./assets/img/armed.png').section__link-img
+          .section__text Рекомендуем не откладывать решение и обсудить условия сотрудничества уже сегодня. Свяжитесь с нашим менеджером по телефону #[a(href="tel:84956362825") 8 (495) 636-28-25], и мы обговорим все интересующие вопросы
+
+    footer.footer
+      .container
+        .footer__row
+          .footer__col
+            .footer__col-title Реквизиты
+            ul.footer__list
+              li.footer__item #[span ООО «Научно-производственный центр медицинской техники «АРМЕД»]
+              li.footer__item #[span Юридический и фактический адрес:] 143912, Московская область, г. Балашиха, шоссе Энтузиастов Западная коммунальная зона, владение 1А, пом. 1/1
+              li.footer__item #[span ИНН/КПП:] 5001092469 / 500101001
+              li.footer__item #[span ОГРН:] 1135001000617
+              li.footer__item #[span ОКПО:] 13391002, #[span ОКАТО:] 46204501000, #[span ОКВЭД:] 33.1
+              li.footer__item #[span Р/С:] 40702810900000011480 в ПАО «Промсвязьбанк» г. Москва
+              li.footer__item #[span БИК:] 044525555, #[span К/С:] 30101810400000000555
+              li.footer__item #[span Ген. директор и гл.бухгалтер:] Щукарев Андрей Анатольевич
+          .footer__col
+            .footer__col-title Контакты
+            ul.footer__list
+              li.footer__item #[a(href='tel:+74951502898') +7 (495) 150 28 98]
+              li.footer__item #[a(href='mailto:info@npcarmed.ru') info@npcarmed.ruinfo@npcarmed.ru]
+              li.footer__item 143912, Московская область, г. Балашиха, шоссе Энтузиастов Западная коммунальная зона, владение 1А, пом. 1/1
+    .footer__block © 2019 НПЦ МТ Армед
