@@ -320,6 +320,9 @@
   margin-top: 140px;
   position: relative;
   justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   //padding: calc(50vh - 140px - 100px) 0;
 
   .container {
@@ -336,7 +339,27 @@
     height: 50px;
     will-change: transform;
   }
+  .button {
+    position: relative;
+    top: -50px;
+    &:hover {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
 
+}
+.works__link {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: $primary;
+  transition: .3s;
+  position: relative;
+  top: -50px;
+  &:hover {
+    color: $accent;
+  }
 }
 
 .fixed {
