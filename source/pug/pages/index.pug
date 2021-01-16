@@ -8,323 +8,251 @@ block content
       .container
         .header__row
           a(href="#").header__logo
-            img(src='./assets/img/logo.png').header__logo-img
-          a(href="tel:+74951502898").header__phone 8 (495) 150 28 98
-
+            img(src='./assets/img/logo2.jpg').header__logo-img
+          nav.header__list
+            a(href="#").header__item О компании
+            a(href="#").header__item Контакты
+            a(href="#").header__item Прайс
+            a(href="#").header__item Наши работы
+            a(href="#").header__item Вызов мастера
+          .header__contacts
+            a(href="tel:89266308361").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#phone")
+                .header__contacts-text 8 (926) 630 83 61
+            a(href="mailto:elektrik24.7@mail.ru").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#email")
+              .header__contacts-text elektrik24.7@mail.ru
     main.main
-      section.section.section1
-        .section__bg
-          img(src='./assets/img/bg1.jpg').section__bg-pic
+      section.section.intro
+        .intro__bg
+          img(src='./assets/img/bg1.jpg').intro__bg-pic
+        img(src='./assets/img/decor1.jpg').intro__decor
         .container.container_bg
-          .page__content
-            h1.page__title НПЦ МТ АРМЕД
-            .page__text Открываем новую эру отечественного производства медицинского оборудования
-            a(href="#").page__button Смотреть видео
+          .intro__content
+            h1.intro__title ELEKTRIKA #[span VAM]
+            h2.intro__subtitle Электромонтажные работы в Москве и Московской области
+            .intro__text Круглосуточные, срочные вызовы электрика на дом
+            ul.intro__list
+              li.intro__item Бесплатная консультация
+              li.intro__item Расчет полной стоимости работ
+              li.intro__item Гарантия на работу
+            a(href="#").button Оставить заявку
 
-      section.section.section2
+
+      section.section.about
         .container
           .section__content
-            h2.section__title Научно-производственный центр медицинской техники “Армед”
-            .section__list
-              .section__item
-                img(src='./assets/img/11.png').section__item-img
-                .section__item-text Медицинское оборудование отечественного производства
-              .section__item
-                img(src='./assets/img/12.png').section__item-img
-                .section__item-text С 2013 года на российском рынке
-              .section__item
-                img(src='./assets/img/13.png').section__item-img
-                .section__item-text Сделано в России
-              .section__item
-                img(src='./assets/img/14.png').section__item-img
-                .section__item-text Бренд, которому доверяют миллионы
-              .section__item
-                img(src='./assets/img/15.png').section__item-img
-                .section__item-text Свои низкие цены независимо от курса валют
+            h2.section__title О компании
+            .section__text Мы предоставляем комплекс электромонтажных работ в Москве и Московской области. Принимаем заказы на работу в квартирах, домах, складах, офисных помещениях и иных объектах. У нас работают опытные, квалифицированные электрики, которые быстро справляются с работами любой сложности. Мы выполняем комплекс услуг, начиная от подключения объекта к линии электропередач (ЛЭП), завершая монтажом розетки и выключателя. Профессиональный подход к работе позволяют сократить время и стоимость обслуживания. На все выполненные работы даем гарантию сроком на 2 года.
+            .about__list
+              .about__item
+                .about__item-img
+                  img(src='./assets/img/11.png').about__item-pic
+                .about__item-text Оборудование ведущих мировых производителей
+              .about__item
+                .about__item-img
+                  img(src='./assets/img/12.png').about__item-pic
+                .about__item-text С 2013 года на российском рынке
+              .about__item
+                .about__item-img
+                  img(src='./assets/img/13.png').about__item-pic
+                .about__item-text Профессиональная команда специалистов
+              .about__item
+                .about__item-img
+                  img(src='./assets/img/14.png').about__item-pic
+                .about__item-text Десятки успешно завешенных проектов
+              .about__item
+                .about__item-img
+                  img(src='./assets/img/15.png').about__item-pic
+                .about__item-text Низкие цены
 
-            .section__text НПЦ МТ “Армед” разрабатывает и производит товары для защиты и поддержки здоровья, спасения жизни и реабилитации
-
-
-      .section.section-wrap
-        section.section.section3.section3_1
-          .section__bg
-            img(src='./assets/img/bg2.jpg').section__bg-pic
-          .container.container_bg
-            .section__content
-              .section__blur
-              h2.section__title Крупнейший в России производитель
-              .section__text Рециркуляторов закрытого типа для разнопрофильных объектов
-        section.section.section3.section3_2
-          .section__bg
-            img(src='./assets/img/bg3.jpg').section__bg-pic
-          .container.container_bg
-            .section__content
-              .section__blur
-              h2.section__title Динамично растущее производство в Подмосковье
-              .section__text 8 линий сборки запущено в 2020 г., новый цех на 2 Га заработает в 2021 г.
-        section.section.section3.section3_3
-          .section__bg
-            img(src='./assets/img/bg4.jpg').section__bg-pic
-          .container.container_bg
-            .section__content
-              .section__blur
-              h2.section__title Большая команда профессионалов
-              .section__text Более 120 инженеров-конструкторов, технологов, менеджеров и сборщико
-        section.section.section3.section3_4
-          .section__bg
-            img(src='./assets/img/bg5.jpg').section__bg-pic
-          .container.container_bg
-            .section__content
-              .section__blur
-              h2.section__title Ежедневные объемы производства
-              .section__text Более 1 500 медицинских изделий изготавливаем ежедневно
-        section.section.section3.section3_5
-          .section__bg
-            img(src='./assets/img/bg6.jpg').section__bg-pic
-          .container.container_bg
-            .section__content
-              .section__blur
-              h2.section__title Собственная метрологическая лаборатория
-              .section__text Оперативная поверка медицинских приборов
-
-
-      section.section.section4
+      section.section.types
         .container
-          h2.section__title Наша продукция
-          .section__row
-            .section__content
-              .section__subtitle Рециркуляторы закрытого типа “Армед”
-              .options__list
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text 1-, 2- и 3-ламповые приборы
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Металлический корпус
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Надежная конструкция
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Простое управление
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Низкий уровень шума вентиляторов
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Производительность от 30 до 100 куб.м
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Оптимальный функционал
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Безопасная работа в присутствии людей
-            .section__img
-              img(src='./assets/img/41.png').section__img-pic
-          .section__list
-            .section__item
-              .section__card
-                .section__card-decor
-                  img(src='./assets/img/basket.png').section__card-decor-pic
-                img(src='./assets/img/51.jpg').section__card-img
-                .section__card-text Армед CH 111-115 М/1
-                .section__card-price
-                  del 999 ₽
-                  ins 699 ₽
-            .section__item
-              .section__card
-                .section__card-decor
-                  img(src='./assets/img/basket.png').section__card-decor-pic
-                img(src='./assets/img/51.jpg').section__card-img
-                .section__card-text Армед CH 111-130 М/1
-                .section__card-price
-                  ins 10 006 99 ₽
-            .section__item
-              .section__card
-                .section__card-decor
-                  img(src='./assets/img/basket.png').section__card-decor-pic
-                img(src='./assets/img/51.jpg').section__card-img
-                .section__card-text Армед CH 211-115 М/1 и еще немножечко
-                .section__card-price
-                  del 999 ₽
-                  ins 10 006 99 ₽
-            .section__item
-              .section__card
-                .section__card-decor
-                  img(src='./assets/img/basket.png').section__card-decor-pic
-                img(src='./assets/img/51.jpg').section__card-img
-                .section__card-text Армед CH 211-130 М/1
-                .section__card-price
-                  del 999 ₽
-                  ins 10 006 99 ₽
-            .section__item
-              .section__card
-                .section__card-decor
-                  img(src='./assets/img/basket.png').section__card-decor-pic
-                img(src='./assets/img/51.jpg').section__card-img
-                .section__card-text Армед CH 311-115 М/1
-                .section__card-price
-                  del 999 ₽
-                  ins 10 006 99 ₽
-            .section__item
-              .section__card
-                .section__card-decor
-                  img(src='./assets/img/basket.png').section__card-decor-pic
-                img(src='./assets/img/51.jpg').section__card-img
-                .section__card-text Армед CH 311-130 М
-                .section__card-price
-                  del 999 ₽
-                  ins 10 006 99 ₽
+          .section__content
+            h2.section__title Мы предлагаем любые виды электромонтажных работ любой сложности
+            .types__list
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img1.jpg').types__item-pic
+                .types__item-text В квартирах
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img2.jpg').types__item-pic
+                .types__item-text В новостройках
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img3.jpg').types__item-pic
+                .types__item-text В деревянных домах и коттеджах. Ретро проводка
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img4.jpg').types__item-pic
+                .types__item-text В бюджетных организациях
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img5.jpg').types__item-pic
+                .types__item-text Штробление
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img6.jpg').types__item-pic
+                .types__item-text Прокладка и замена проводки
+                .types__item-button Подробнее
 
-      section.section.section4
-        .container
-          h2.section__title Новинка 2021
-          .section__row
-            .section__content
-              .section__subtitle Aircube 115 S
-              .options__list
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text 1-ламповый рециркулятор для небольших помещений
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Самая компактная и легкая модель в линейке “Армед”
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Защитный пластиковый корпус
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Стильный дизайн для любого интерьера
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text 2 элегантные стойки в основании
-            .section__img
-              img(src='./assets/img/61.png').section__img-pic
 
-      section.section.section5
-        .container
-          h2.section__title Эффективность рециркуляторов научно подтверждена
-          .section__row
-            a(href="#").section__img
-              img(src='./assets/img/71.png').section__img-pic
-            .section__content
-              .section__text В 2020 году ООО “НПЦ МТ “Армед” получило положительный ответ от ФБУН НИИ Дезинфектологии Роспотребнадзора на запрос об эффективности рециркуляторов в профилактике заболеваний, вызванных коронавирусом, другими вирусами и бактериями
 
-      section.section.section4
-        .container
-          h2.section__title Механические кровати
-          .section__row
-            .section__content
-              .section__subtitle РС105-Б
-              .options__list
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Удобная механическая регулировка головной, тазобедренной и голеностопной секций
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Складные рычаги управления
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Грузоподъемность – до 250 кг
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Складные металлические боковые ограждения с надежными фиксаторами
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Стойка для подтягивания и инфузионная стойка в комплекте
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Маневренные колеса с тормозными педалями
-            .section__img
-              img(src='./assets/img/81.png').section__img-pic
+            .types__info
+              svg.types__info-icon
+                use(xlink:href="./assets/img/sprite.svg#info")
+              .types__info-text Важно! В связи с пандемической ситуацией все наши сотрудники работают только в средствах индивидуальной защиты и используют дезинфицирующие средства!
+
+      section.section.works.js-section
+        .fixed.js-fixed
+          .container
+            h2.section__title.js-title
+              span Наши работы
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/1.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/2.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/3.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/4.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/5.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/6.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/7.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/8.jpg' alt='')
+            .fixed__block.js-fixed-row
+              .fixed__row
+                .fixed__content
+                  .fixed__title Описание
+                .fixed__img
+                  img.fixed__img-pic(src='./assets/img/works/9.jpg' alt='')
 
 
 
 
-
-      section.section.section5
-        .container
-          h2.section__title В чем сила "Армед"?"
-          .section__row
-            .section__img
-              img(src='./assets/img/91.png').section__img-pic
-            .section__content
-              .section__subtitle Стандарты качества
-              .section__text Мы внедрили в производство стандарты качества в соответствии с ГОСТ Р ИСО 9001:2015
-
-      section.section.section5.reverse
-        .container
-          .section__row
-            .section__content
-              .section__subtitle Сертифицированное оборудование
-              .section__text Все товары, которые мы производим, проходят обязательную сертификацию, имеют регистрационные удостоверения от Росздравнадзора
-            .section__img
-              img(src='./assets/img/92.png').section__img-pic
-
-      section.section.section4.reverse
-        .container
-          h2.section__title Сотрудничество с нами
-          .section__text Развивайтесь, стройте бизнес, оснащайте больницы и другие медицинские учреждения вместе с НПЦ МТ “Армед”
-          .section__list
-            .section__item.min-shadow
-              .section__info
-                .section__info-decor
-                  img(src='./assets/img/101.png').section__card-decor-pic
-                .section__info-text #[span С нами уже сотрудничают] более 11 000 медицинских учреждений и сотни торговых компаний
-            .section__item.min-shadow
-              .section__info
-                .section__info-decor
-                  img(src='./assets/img/102.png').section__card-decor-pic
-                .section__info-text #[span Наш бренд ассоциируется] у покупателей с высоким качеством изделий и доступными ценами
-            .section__item.min-shadow
-              .section__info
-                .section__info-decor
-                  img(src='./assets/img/103.png').section__card-decor-pic
-                .section__info-text #[span Мы остаемся клиентоориентированной компанией] даже в текущей ситуации нестабильности
-          .section__row
-            .section__img
-              img(src='./assets/img/111.png').section__img-pic
-              img(src='./assets/img/112.png').section__img-pic
-            .section__content
-              .section__subtitle Для наших партнеров:
-              .options__list
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Гибкая система скидок
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Производство и отгрузка в поставленные сроки
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Собственный автопарк и услуги транспортных компаний
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Доставка заказов по всей России и в страны СНГ
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Самовывоз со склада в Московской области
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Бесплатное обучение сотрудников
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Рекламная поддержка в медиа-сфере
-                .options__item
-                  img(src='./assets/img/icon.png').options__item-icon
-                  .options__item-text Информационная и рекламная печатная продукция
-
-
-
-      section.section.section6
-        .container
-          h2.section__title Наши эксклюзивные партнеры
-          .section__list
-            a(href="#").section__link
-              img(src='./assets/img/dobrota.png').section__link-img
-            a(href="#").section__link
-              img(src='./assets/img/armed.png').section__link-img
-          .section__text Рекомендуем не откладывать решение и обсудить условия сотрудничества уже сегодня. Свяжитесь с нашим менеджером по телефону #[a(href="tel:84956362825") 8 (495) 636-28-25], и мы обговорим все интересующие вопросы
-
+      //section.section.works.js-section
+      //  .fixed.js-fixed
+      //    .container
+      //      h2.section__title.js-title
+      //        span Наши работы
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='0')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle
+      //                | &Ucy;&ncy;&icy;&chcy;&tcy;&ocy;&zhcy;&iecy;&ncy;&icy;&iecy; &dcy;&ocy; 99% &mcy;&icy;&kcy;&rcy;&ocy;&ocy;&rcy;&gcy;&acy;&ncy;&icy;&zcy;&mcy;&ocy;&vcy; &vcy; &vcy;&ocy;&zcy;&dcy;&ucy;&khcy;&iecy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='assets/img/types/1.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='1')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle &Acy;&bcy;&scy;&ocy;&lcy;&yucy;&tcy;&ncy;&acy;&yacy; &bcy;&iecy;&zcy;&ocy;&pcy;&acy;&scy;&ncy;&ocy;&scy;&tcy;&softcy; &icy;&scy;&pcy;&ocy;&lcy;&softcy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&yacy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/42.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='2')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle &Ncy;&acy;&ucy;&chcy;&ncy;&ocy; &dcy;&ocy;&kcy;&acy;&zcy;&acy;&ncy;&ncy;&acy;&yacy; &ecy;&fcy;&fcy;&iecy;&kcy;&tcy;&icy;&vcy;&ncy;&ocy;&scy;&tcy;&softcy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/43.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='3')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle &Gcy;&acy;&rcy;&acy;&ncy;&tcy;&icy;&yacy; 1 &gcy;&ocy;&dcy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/44.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='4')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle 10-&lcy;&iecy;&tcy;&ncy;&icy;&jcy; &ocy;&pcy;&ycy;&tcy; &pcy;&rcy;&ocy;&icy;&zcy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&acy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/45.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='5')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle &Bcy;&ocy;&lcy;&iecy;&iecy; 40 &scy;&iecy;&rcy;&vcy;&icy;&scy;&ncy;&ycy;&khcy; &tscy;&iecy;&ncy;&tcy;&rcy;&ocy;&vcy; &pcy;&ocy; &vcy;&scy;&iecy;&jcy; &Rcy;&ocy;&scy;&scy;&icy;&icy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/46.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='6')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle
+      //                | &Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&ocy;&ncy;&ncy;&ocy;&iecy; &ucy;&dcy;&ocy;&scy;&tcy;&ocy;&vcy;&iecy;&rcy;&iecy;&ncy;&icy;&iecy; &ocy;&tcy; &Rcy;&ocy;&scy;&zcy;&dcy;&rcy;&acy;&vcy;&ncy;&acy;&dcy;&zcy;&ocy;&rcy;&acy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/47.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='7')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle &Dcy;&lcy;&yacy; &pcy;&ocy;&mcy;&iecy;&shchcy;&iecy;&ncy;&icy;&jcy; &lcy;&yucy;&bcy;&ocy;&gcy;&ocy; &ncy;&acy;&zcy;&ncy;&acy;&chcy;&iecy;&ncy;&icy;&yacy; &icy; &pcy;&lcy;&ocy;&shchcy;&acy;&dcy;&icy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/48.jpg' alt='')
+      //      .fixed__row-wrap.js-fixed-row
+      //        .fixed__row.js-fixed-card(data-tab='8')
+      //          .fixed__content
+      //            .fixed__content-wrap
+      //              .fixed__subtitle &Scy;&ocy;&bcy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&ocy;&iecy; &pcy;&rcy;&ocy;&icy;&zcy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&ocy; &vcy; &Rcy;&Fcy;
+      //          .fixed__img
+      //            .fixed__img-warp
+      //              img.fixed__img-pic(src='/images/promo/recbusiness/49.jpg' alt='')
     footer.footer
       .container
         .footer__row

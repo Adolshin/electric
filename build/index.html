@@ -11,350 +11,262 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <!--script(src="./assets/js/app.js" defer)-->
+    <script src="./assets/js/app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__row"><a class="header__logo" href="#"><img class="header__logo-img" src="./assets/img/logo.png"></a><a class="header__phone" href="tel:+74951502898">8 (495) 150 28 98</a></div>
+          <div class="header__row"><a class="header__logo" href="#"><img class="header__logo-img" src="./assets/img/logo2.jpg"></a>
+            <nav class="header__list"><a class="header__item" href="#">О компании</a><a class="header__item" href="#">Контакты</a><a class="header__item" href="#">Прайс</a><a class="header__item" href="#">Наши работы</a><a class="header__item" href="#">Вызов мастера</a></nav>
+            <div class="header__contacts"><a class="header__contacts-item" href="tel:89266308361">
+                <svg class="header__contacts-icon">
+                  <use xlink:href="./assets/img/sprite.svg#phone"></use>
+                  <div class="header__contacts-text">8 (926) 630 83 61</div>
+                </svg></a><a class="header__contacts-item" href="mailto:elektrik24.7@mail.ru">
+                <svg class="header__contacts-icon">
+                  <use xlink:href="./assets/img/sprite.svg#email"></use>
+                </svg>
+                <div class="header__contacts-text">elektrik24.7@mail.ru</div></a></div>
+          </div>
         </div>
       </header>
       <main class="main">
-        <section class="section section1">
-          <div class="section__bg"><img class="section__bg-pic" src="./assets/img/bg1.jpg"></div>
+        <section class="section intro">
+          <div class="intro__bg"><img class="intro__bg-pic" src="./assets/img/bg1.jpg"></div><img class="intro__decor" src="./assets/img/decor1.jpg">
           <div class="container container_bg">
-            <div class="page__content">
-              <h1 class="page__title">НПЦ МТ АРМЕД</h1>
-              <div class="page__text">Открываем новую эру отечественного производства медицинского оборудования</div><a class="page__button" href="#">Смотреть видео</a>
+            <div class="intro__content">
+              <h1 class="intro__title">ELEKTRIKA <span>VAM</span></h1>
+              <h2 class="intro__subtitle">Электромонтажные работы в Москве и Московской области</h2>
+              <div class="intro__text">Круглосуточные, срочные вызовы электрика на дом</div>
+              <ul class="intro__list">
+                <li class="intro__item">Бесплатная консультация</li>
+                <li class="intro__item">Расчет полной стоимости работ</li>
+                <li class="intro__item">Гарантия на работу</li>
+              </ul><a class="button" href="#">Оставить заявку</a>
             </div>
           </div>
         </section>
-        <section class="section section2">
+        <section class="section about">
           <div class="container">
             <div class="section__content">
-              <h2 class="section__title">Научно-производственный центр медицинской техники “Армед”</h2>
-              <div class="section__list">
-                <div class="section__item"><img class="section__item-img" src="./assets/img/11.png">
-                  <div class="section__item-text">Медицинское оборудование отечественного производства</div>
+              <h2 class="section__title">О компании</h2>
+              <div class="section__text">Мы предоставляем комплекс электромонтажных работ в Москве и Московской области. Принимаем заказы на работу в квартирах, домах, складах, офисных помещениях и иных объектах. У нас работают опытные, квалифицированные электрики, которые быстро справляются с работами любой сложности. Мы выполняем комплекс услуг, начиная от подключения объекта к линии электропередач (ЛЭП), завершая монтажом розетки и выключателя. Профессиональный подход к работе позволяют сократить время и стоимость обслуживания. На все выполненные работы даем гарантию сроком на 2 года.</div>
+              <div class="about__list">
+                <div class="about__item">
+                  <div class="about__item-img"><img class="about__item-pic" src="./assets/img/11.png"></div>
+                  <div class="about__item-text">Оборудование ведущих мировых производителей</div>
                 </div>
-                <div class="section__item"><img class="section__item-img" src="./assets/img/12.png">
-                  <div class="section__item-text">С 2013 года на российском рынке</div>
+                <div class="about__item">
+                  <div class="about__item-img"><img class="about__item-pic" src="./assets/img/12.png"></div>
+                  <div class="about__item-text">С 2013 года на российском рынке</div>
                 </div>
-                <div class="section__item"><img class="section__item-img" src="./assets/img/13.png">
-                  <div class="section__item-text">Сделано в России</div>
+                <div class="about__item">
+                  <div class="about__item-img"><img class="about__item-pic" src="./assets/img/13.png"></div>
+                  <div class="about__item-text">Профессиональная команда специалистов</div>
                 </div>
-                <div class="section__item"><img class="section__item-img" src="./assets/img/14.png">
-                  <div class="section__item-text">Бренд, которому доверяют миллионы</div>
+                <div class="about__item">
+                  <div class="about__item-img"><img class="about__item-pic" src="./assets/img/14.png"></div>
+                  <div class="about__item-text">Десятки успешно завешенных проектов</div>
                 </div>
-                <div class="section__item"><img class="section__item-img" src="./assets/img/15.png">
-                  <div class="section__item-text">Свои низкие цены независимо от курса валют</div>
+                <div class="about__item">
+                  <div class="about__item-img"><img class="about__item-pic" src="./assets/img/15.png"></div>
+                  <div class="about__item-text">Низкие цены</div>
                 </div>
               </div>
-              <div class="section__text">НПЦ МТ “Армед” разрабатывает и производит товары для защиты и поддержки здоровья, спасения жизни и реабилитации</div>
             </div>
           </div>
         </section>
-        <div class="section section-wrap">
-          <section class="section section3 section3_1">
-            <div class="section__bg"><img class="section__bg-pic" src="./assets/img/bg2.jpg"></div>
-            <div class="container container_bg">
-              <div class="section__content">
-                <div class="section__blur"></div>
-                <h2 class="section__title">Крупнейший в России производитель</h2>
-                <div class="section__text">Рециркуляторов закрытого типа для разнопрофильных объектов</div>
-              </div>
-            </div>
-          </section>
-          <section class="section section3 section3_2">
-            <div class="section__bg"><img class="section__bg-pic" src="./assets/img/bg3.jpg"></div>
-            <div class="container container_bg">
-              <div class="section__content">
-                <div class="section__blur"></div>
-                <h2 class="section__title">Динамично растущее производство в Подмосковье</h2>
-                <div class="section__text">8 линий сборки запущено в 2020 г., новый цех на 2 Га заработает в 2021 г.</div>
-              </div>
-            </div>
-          </section>
-          <section class="section section3 section3_3">
-            <div class="section__bg"><img class="section__bg-pic" src="./assets/img/bg4.jpg"></div>
-            <div class="container container_bg">
-              <div class="section__content">
-                <div class="section__blur"></div>
-                <h2 class="section__title">Большая команда профессионалов</h2>
-                <div class="section__text">Более 120 инженеров-конструкторов, технологов, менеджеров и сборщико</div>
-              </div>
-            </div>
-          </section>
-          <section class="section section3 section3_4">
-            <div class="section__bg"><img class="section__bg-pic" src="./assets/img/bg5.jpg"></div>
-            <div class="container container_bg">
-              <div class="section__content">
-                <div class="section__blur"></div>
-                <h2 class="section__title">Ежедневные объемы производства</h2>
-                <div class="section__text">Более 1 500 медицинских изделий изготавливаем ежедневно</div>
-              </div>
-            </div>
-          </section>
-          <section class="section section3 section3_5">
-            <div class="section__bg"><img class="section__bg-pic" src="./assets/img/bg6.jpg"></div>
-            <div class="container container_bg">
-              <div class="section__content">
-                <div class="section__blur"></div>
-                <h2 class="section__title">Собственная метрологическая лаборатория</h2>
-                <div class="section__text">Оперативная поверка медицинских приборов</div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <section class="section section4">
+        <section class="section types">
           <div class="container">
-            <h2 class="section__title">Наша продукция</h2>
-            <div class="section__row">
-              <div class="section__content">
-                <div class="section__subtitle">Рециркуляторы закрытого типа “Армед”</div>
-                <div class="options__list">
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">1-, 2- и 3-ламповые приборы</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Металлический корпус</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Надежная конструкция</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Простое управление</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Низкий уровень шума вентиляторов</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Производительность от 30 до 100 куб.м</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Оптимальный функционал</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Безопасная работа в присутствии людей</div>
-                  </div>
-                </div>
+            <div class="section__content">
+              <h2 class="section__title">Мы предлагаем любые виды электромонтажных работ любой сложности</h2>
+              <div class="types__list"><a class="types__item" href="#">
+                  <div class="types__item-img"><img class="types__item-pic" src="./assets/img/img1.jpg"></div>
+                  <div class="types__item-text">В квартирах</div>
+                  <div class="types__item-button">Подробнее</div></a><a class="types__item" href="#">
+                  <div class="types__item-img"><img class="types__item-pic" src="./assets/img/img2.jpg"></div>
+                  <div class="types__item-text">В новостройках</div>
+                  <div class="types__item-button">Подробнее</div></a><a class="types__item" href="#">
+                  <div class="types__item-img"><img class="types__item-pic" src="./assets/img/img3.jpg"></div>
+                  <div class="types__item-text">В деревянных домах и коттеджах. Ретро проводка</div>
+                  <div class="types__item-button">Подробнее</div></a><a class="types__item" href="#">
+                  <div class="types__item-img"><img class="types__item-pic" src="./assets/img/img4.jpg"></div>
+                  <div class="types__item-text">В бюджетных организациях</div>
+                  <div class="types__item-button">Подробнее</div></a><a class="types__item" href="#">
+                  <div class="types__item-img"><img class="types__item-pic" src="./assets/img/img5.jpg"></div>
+                  <div class="types__item-text">Штробление</div>
+                  <div class="types__item-button">Подробнее</div></a><a class="types__item" href="#">
+                  <div class="types__item-img"><img class="types__item-pic" src="./assets/img/img6.jpg"></div>
+                  <div class="types__item-text">Прокладка и замена проводки</div>
+                  <div class="types__item-button">Подробнее</div></a></div>
+              <div class="types__info">
+                <svg class="types__info-icon">
+                  <use xlink:href="./assets/img/sprite.svg#info"></use>
+                </svg>
+                <div class="types__info-text">Важно! В связи с пандемической ситуацией все наши сотрудники работают только в средствах индивидуальной защиты и используют дезинфицирующие средства!</div>
               </div>
-              <div class="section__img"><img class="section__img-pic" src="./assets/img/41.png"></div>
             </div>
-            <div class="section__list">
-              <div class="section__item">
-                <div class="section__card">
-                  <div class="section__card-decor"><img class="section__card-decor-pic" src="./assets/img/basket.png"></div><img class="section__card-img" src="./assets/img/51.jpg">
-                  <div class="section__card-text">Армед CH 111-115 М/1</div>
-                  <div class="section__card-price">
-                    <del>999 ₽</del><ins>699 ₽</ins>
+          </div>
+        </section>
+        <section class="section works js-section">
+          <div class="fixed js-fixed">
+            <div class="container">
+              <h2 class="section__title js-title"><span>Наши работы</span></h2>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
                   </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/1.jpg" alt=""></div>
                 </div>
               </div>
-              <div class="section__item">
-                <div class="section__card">
-                  <div class="section__card-decor"><img class="section__card-decor-pic" src="./assets/img/basket.png"></div><img class="section__card-img" src="./assets/img/51.jpg">
-                  <div class="section__card-text">Армед CH 111-130 М/1</div>
-                  <div class="section__card-price"><ins>10 006 99 ₽</ins></div>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
+                  </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/2.jpg" alt=""></div>
                 </div>
               </div>
-              <div class="section__item">
-                <div class="section__card">
-                  <div class="section__card-decor"><img class="section__card-decor-pic" src="./assets/img/basket.png"></div><img class="section__card-img" src="./assets/img/51.jpg">
-                  <div class="section__card-text">Армед CH 211-115 М/1 и еще немножечко</div>
-                  <div class="section__card-price">
-                    <del>999 ₽</del><ins>10 006 99 ₽</ins>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
                   </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/3.jpg" alt=""></div>
                 </div>
               </div>
-              <div class="section__item">
-                <div class="section__card">
-                  <div class="section__card-decor"><img class="section__card-decor-pic" src="./assets/img/basket.png"></div><img class="section__card-img" src="./assets/img/51.jpg">
-                  <div class="section__card-text">Армед CH 211-130 М/1</div>
-                  <div class="section__card-price">
-                    <del>999 ₽</del><ins>10 006 99 ₽</ins>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
                   </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/4.jpg" alt=""></div>
                 </div>
               </div>
-              <div class="section__item">
-                <div class="section__card">
-                  <div class="section__card-decor"><img class="section__card-decor-pic" src="./assets/img/basket.png"></div><img class="section__card-img" src="./assets/img/51.jpg">
-                  <div class="section__card-text">Армед CH 311-115 М/1</div>
-                  <div class="section__card-price">
-                    <del>999 ₽</del><ins>10 006 99 ₽</ins>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
                   </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/5.jpg" alt=""></div>
                 </div>
               </div>
-              <div class="section__item">
-                <div class="section__card">
-                  <div class="section__card-decor"><img class="section__card-decor-pic" src="./assets/img/basket.png"></div><img class="section__card-img" src="./assets/img/51.jpg">
-                  <div class="section__card-text">Армед CH 311-130 М</div>
-                  <div class="section__card-price">
-                    <del>999 ₽</del><ins>10 006 99 ₽</ins>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
                   </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/6.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
+                  </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/7.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
+                  </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/8.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="fixed__block js-fixed-row">
+                <div class="fixed__row">
+                  <div class="fixed__content">
+                    <div class="fixed__title">Описание</div>
+                  </div>
+                  <div class="fixed__img"><img class="fixed__img-pic" src="./assets/img/works/9.jpg" alt=""></div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="section section4">
-          <div class="container">
-            <h2 class="section__title">Новинка 2021</h2>
-            <div class="section__row">
-              <div class="section__content">
-                <div class="section__subtitle">Aircube 115 S</div>
-                <div class="options__list">
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">1-ламповый рециркулятор для небольших помещений</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Самая компактная и легкая модель в линейке “Армед”</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Защитный пластиковый корпус</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Стильный дизайн для любого интерьера</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">2 элегантные стойки в основании</div>
-                  </div>
-                </div>
-              </div>
-              <div class="section__img"><img class="section__img-pic" src="./assets/img/61.png"></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section5">
-          <div class="container">
-            <h2 class="section__title">Эффективность рециркуляторов научно подтверждена</h2>
-            <div class="section__row"><a class="section__img" href="#"><img class="section__img-pic" src="./assets/img/71.png"></a>
-              <div class="section__content">
-                <div class="section__text">В 2020 году ООО “НПЦ МТ “Армед” получило положительный ответ от ФБУН НИИ Дезинфектологии Роспотребнадзора на запрос об эффективности рециркуляторов в профилактике заболеваний, вызванных коронавирусом, другими вирусами и бактериями</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section4">
-          <div class="container">
-            <h2 class="section__title">Механические кровати</h2>
-            <div class="section__row">
-              <div class="section__content">
-                <div class="section__subtitle">РС105-Б</div>
-                <div class="options__list">
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Удобная механическая регулировка головной, тазобедренной и голеностопной секций</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Складные рычаги управления</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Грузоподъемность – до 250 кг</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Складные металлические боковые ограждения с надежными фиксаторами</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Стойка для подтягивания и инфузионная стойка в комплекте</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Маневренные колеса с тормозными педалями</div>
-                  </div>
-                </div>
-              </div>
-              <div class="section__img"><img class="section__img-pic" src="./assets/img/81.png"></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section5">
-          <div class="container">
-            <h2 class="section__title">В чем сила "Армед"?"</h2>
-            <div class="section__row">
-              <div class="section__img"><img class="section__img-pic" src="./assets/img/91.png"></div>
-              <div class="section__content">
-                <div class="section__subtitle">Стандарты качества</div>
-                <div class="section__text">Мы внедрили в производство стандарты качества в соответствии с ГОСТ Р ИСО 9001:2015</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section5 reverse">
-          <div class="container">
-            <div class="section__row">
-              <div class="section__content">
-                <div class="section__subtitle">Сертифицированное оборудование</div>
-                <div class="section__text">Все товары, которые мы производим, проходят обязательную сертификацию, имеют регистрационные удостоверения от Росздравнадзора</div>
-              </div>
-              <div class="section__img"><img class="section__img-pic" src="./assets/img/92.png"></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section4 reverse">
-          <div class="container">
-            <h2 class="section__title">Сотрудничество с нами</h2>
-            <div class="section__text">Развивайтесь, стройте бизнес, оснащайте больницы и другие медицинские учреждения вместе с НПЦ МТ “Армед”</div>
-            <div class="section__list">
-              <div class="section__item min-shadow">
-                <div class="section__info">
-                  <div class="section__info-decor"><img class="section__card-decor-pic" src="./assets/img/101.png"></div>
-                  <div class="section__info-text"><span>С нами уже сотрудничают</span> более 11 000 медицинских учреждений и сотни торговых компаний</div>
-                </div>
-              </div>
-              <div class="section__item min-shadow">
-                <div class="section__info">
-                  <div class="section__info-decor"><img class="section__card-decor-pic" src="./assets/img/102.png"></div>
-                  <div class="section__info-text"><span>Наш бренд ассоциируется</span> у покупателей с высоким качеством изделий и доступными ценами</div>
-                </div>
-              </div>
-              <div class="section__item min-shadow">
-                <div class="section__info">
-                  <div class="section__info-decor"><img class="section__card-decor-pic" src="./assets/img/103.png"></div>
-                  <div class="section__info-text"><span>Мы остаемся клиентоориентированной компанией</span> даже в текущей ситуации нестабильности</div>
-                </div>
-              </div>
-            </div>
-            <div class="section__row">
-              <div class="section__img"><img class="section__img-pic" src="./assets/img/111.png"><img class="section__img-pic" src="./assets/img/112.png"></div>
-              <div class="section__content">
-                <div class="section__subtitle">Для наших партнеров:</div>
-                <div class="options__list">
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Гибкая система скидок</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Производство и отгрузка в поставленные сроки</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Собственный автопарк и услуги транспортных компаний</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Доставка заказов по всей России и в страны СНГ</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Самовывоз со склада в Московской области</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Бесплатное обучение сотрудников</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Рекламная поддержка в медиа-сфере</div>
-                  </div>
-                  <div class="options__item"><img class="options__item-icon" src="./assets/img/icon.png">
-                    <div class="options__item-text">Информационная и рекламная печатная продукция</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section6">
-          <div class="container">
-            <h2 class="section__title">Наши эксклюзивные партнеры</h2>
-            <div class="section__list"><a class="section__link" href="#"><img class="section__link-img" src="./assets/img/dobrota.png"></a><a class="section__link" href="#"><img class="section__link-img" src="./assets/img/armed.png"></a></div>
-            <div class="section__text">Рекомендуем не откладывать решение и обсудить условия сотрудничества уже сегодня. Свяжитесь с нашим менеджером по телефону <a href="tel:84956362825">8 (495) 636-28-25</a>, и мы обговорим все интересующие вопросы</div>
-          </div>
-        </section>
+        <!--section.section.works.js-section-->
+        <!--  .fixed.js-fixed-->
+        <!--    .container-->
+        <!--      h2.section__title.js-title-->
+        <!--        span Наши работы-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='0')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle-->
+        <!--                | &Ucy;&ncy;&icy;&chcy;&tcy;&ocy;&zhcy;&iecy;&ncy;&icy;&iecy; &dcy;&ocy; 99% &mcy;&icy;&kcy;&rcy;&ocy;&ocy;&rcy;&gcy;&acy;&ncy;&icy;&zcy;&mcy;&ocy;&vcy; &vcy; &vcy;&ocy;&zcy;&dcy;&ucy;&khcy;&iecy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='assets/img/types/1.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='1')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle &Acy;&bcy;&scy;&ocy;&lcy;&yucy;&tcy;&ncy;&acy;&yacy; &bcy;&iecy;&zcy;&ocy;&pcy;&acy;&scy;&ncy;&ocy;&scy;&tcy;&softcy; &icy;&scy;&pcy;&ocy;&lcy;&softcy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&yacy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/42.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='2')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle &Ncy;&acy;&ucy;&chcy;&ncy;&ocy; &dcy;&ocy;&kcy;&acy;&zcy;&acy;&ncy;&ncy;&acy;&yacy; &ecy;&fcy;&fcy;&iecy;&kcy;&tcy;&icy;&vcy;&ncy;&ocy;&scy;&tcy;&softcy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/43.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='3')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle &Gcy;&acy;&rcy;&acy;&ncy;&tcy;&icy;&yacy; 1 &gcy;&ocy;&dcy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/44.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='4')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle 10-&lcy;&iecy;&tcy;&ncy;&icy;&jcy; &ocy;&pcy;&ycy;&tcy; &pcy;&rcy;&ocy;&icy;&zcy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&acy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/45.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='5')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle &Bcy;&ocy;&lcy;&iecy;&iecy; 40 &scy;&iecy;&rcy;&vcy;&icy;&scy;&ncy;&ycy;&khcy; &tscy;&iecy;&ncy;&tcy;&rcy;&ocy;&vcy; &pcy;&ocy; &vcy;&scy;&iecy;&jcy; &Rcy;&ocy;&scy;&scy;&icy;&icy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/46.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='6')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle-->
+        <!--                | &Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&ocy;&ncy;&ncy;&ocy;&iecy; &ucy;&dcy;&ocy;&scy;&tcy;&ocy;&vcy;&iecy;&rcy;&iecy;&ncy;&icy;&iecy; &ocy;&tcy; &Rcy;&ocy;&scy;&zcy;&dcy;&rcy;&acy;&vcy;&ncy;&acy;&dcy;&zcy;&ocy;&rcy;&acy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/47.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='7')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle &Dcy;&lcy;&yacy; &pcy;&ocy;&mcy;&iecy;&shchcy;&iecy;&ncy;&icy;&jcy; &lcy;&yucy;&bcy;&ocy;&gcy;&ocy; &ncy;&acy;&zcy;&ncy;&acy;&chcy;&iecy;&ncy;&icy;&yacy; &icy; &pcy;&lcy;&ocy;&shchcy;&acy;&dcy;&icy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/48.jpg' alt='')-->
+        <!--      .fixed__row-wrap.js-fixed-row-->
+        <!--        .fixed__row.js-fixed-card(data-tab='8')-->
+        <!--          .fixed__content-->
+        <!--            .fixed__content-wrap-->
+        <!--              .fixed__subtitle &Scy;&ocy;&bcy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&ocy;&iecy; &pcy;&rcy;&ocy;&icy;&zcy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&ocy; &vcy; &Rcy;&Fcy;-->
+        <!--          .fixed__img-->
+        <!--            .fixed__img-warp-->
+        <!--              img.fixed__img-pic(src='/images/promo/recbusiness/49.jpg' alt='')-->
       </main>
       <footer class="footer">
         <div class="container">

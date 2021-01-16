@@ -1,10 +1,10 @@
 .main {
   width: 100%;
   background-color: $background;
-  overflow: hidden;
+  //overflow: hidden;
   padding-bottom: 100px;
   @include tablets {
-    padding-bottom: 70px;
+
   }
 }
 
@@ -23,832 +23,35 @@
   @include phones {
     margin-bottom: 40px;
   }
-
-  &.section1 {
-    height: 40.73vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-height: calc(100vh - 80px);
-    min-height: 300px;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.38);
-    }
-
-    .page__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      max-width: 830px;
-      margin: 0 auto;
-    }
-
-    .page__title {
-      width: 100%;
-      font-size: 91px;
-      color: #fff;
-      text-align: center;
-
-    }
-
-    .page__text {
-      width: 100%;
-      font-size: 38px;
-      color: #fff;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .page__button {
-      padding: 14px 18px;
-      border-radius: 56px;
-      background-color: $info;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 600;
-      transition: .3s;
-      display: block;
-
-      &:hover {
-        color: $info;
-        background-color: #fff;
-      }
-    }
-
-    @include desktop {
-      height: 782px;
-    }
-    @include container {
-      height: 57.25vw;
-    }
-    @include laptop {
-      .page__title {
-        font-size: 60px;
-      }
-      .page__text {
-        font-size: 25px;
-      }
-    }
-    @include tablets {
-      height: 440px;
-    }
-    @include phones {
-      height: 88.93vw;
-      .page__title {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 41px;
-        margin-bottom: 10px;
-      }
-      .page__text {
-        font-size: 17px;
-        margin-bottom: 8px;
-      }
-    }
-
-  }
-
-  &.section2 {
-    .section__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 30px;
-      margin-right: -30px;
-    }
-
-    .section__item {
-      width: calc((100% - 150px) / 5);
-      margin-right: 30px;
-      margin-bottom: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &:hover {
-        .section__item-img {
-          transform: translateY(-10px);
-        }
-      }
-    }
-
-    .section__item-img {
-      width: 100%;
-      margin-bottom: 10px;
-      transition: .3s;
-    }
-
-    .section__item-text {
-      width: 100%;
-      text-align: center;
-      font-weight: 600;
-      font-size: 17px;
-      color: $secondary;
-    }
-
-    .section__text {
-      width: 100%;
-      font-size: 38px;
-      text-align: center;
-    }
-
-    @include laptop {
-      .section__text {
-        font-size: 25px;
-      }
-    }
-    @include tablets {
-      .section__item {
-        width: calc((100% - 90px) / 3);
-      }
-    }
-    @include phones {
-      .section__list {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-right: 0;
-      }
-      .section__item {
-        width: auto;
-        margin-right: 0;
-      }
-      .section__item-img {
-        width: auto;
-        margin-bottom: 0;
-      }
-      .section__text {
-        font-size: 17px;
-      }
-    }
-  }
-
-  &.section3 {
-    height: 46.46vw;
-    max-height: calc(100vh - 80px);
-    position: relative;
-    margin-bottom: 50px;
-
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-
-    }
-
-    .section__content {
-      max-width: 750px;
-      position: relative;
-      &:hover {
-        .section__blur {
-          background-color: rgba(255, 255, 255, 1);
-          //filter: blur(120px);
-        }
-        .section__text {
-          color: $primary;
-        }
-      }
-
-    }
-
-    .section__title {
-      font-size: 45px;
-      background-color: $info;
-      margin-bottom: 15px;
-      color: #fff;
-      padding: 25px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .section__text {
-      color: #fff;
-      font-size: 38px;
-      position: relative;
-      z-index: 1;
-      transition: .5s;
-    }
-
-    .section__blur {
-      background-color: rgba(0, 0, 0, 0.56);
-      filter: blur(115px);
-      position: absolute;
-      width: 100%;
-      height: 269px;
-      top: 50px;
-      transition: .5s;
-    }
-
-    &.section3_1 {
-      .section__content {
-        align-self: flex-end;
-        margin-top: 9vw;
-      }
-
-      .section__title {
-        text-align: right;
-      }
-
-      .section__text {
-        text-align: right;
-      }
-    }
-
-    &.section3_2 {
-      .section__content {
-        align-self: center;
-        margin-top: 7vw;
-      }
-
-      .section__title {
-        text-align: center;
-      }
-
-      .section__text {
-        text-align: center;
-      }
-    }
-
-    &.section3_3 {
-      .section__content {
-        align-self: flex-end;
-        margin-top: 15vw;
-      }
-
-      .section__title {
-        text-align: right;
-      }
-
-      .section__text {
-        text-align: right;
-      }
-    }
-
-    &.section3_4 {
-      .section__content {
-        align-self: flex-start;
-        margin-top: 7vw;
-      }
-
-      .section__title {
-        text-align: left;
-      }
-
-      .section__text {
-        text-align: left;
-      }
-    }
-
-    &.section3_5 {
-      .section__content {
-        align-self: flex-end;
-        margin-top: 9vw;
-      }
-
-      .section__title {
-        text-align: right;
-      }
-
-      .section__text {
-        text-align: right;
-      }
-    }
-
-    @include desktop {
-      height: 892px;
-    }
-    @include container {
-      height: 65.3vw;
-    }
-    @include laptop {
-      margin-bottom: 30px;
-      .section__content {
-        max-width: 400px;
-      }
-      .section__text {
-        font-size: 25px;
-      }
-      .section__title {
-        font-size: 30px;
-        padding: 15px;
-      }
-    }
-    @include tablets {
-      height: auto;
-      margin-bottom: 0;
-      .section__bg {
-        position: static;
-      }
-      .section__blur {
-        display: none;
-      }
-      &.section3_1, &.section3_2, &.section3_3, &.section3_4, &.section3_5 {
-        .section__content {
-          align-self: auto;
-          margin-top: 0;
-          padding: 20px 0;
-          width: 100%;
-          max-width: none;
-          align-items: center;
-          &:hover {
-            .section__text {
-              color: #fff;
-            }
-          }
-        }
-
-        .section__title {
-          text-align: center;
-          background-color: transparent;
-          padding: 0;
-          margin-bottom: 10px;
-        }
-
-        .section__text {
-          text-align: center;
-        }
-      }
-    }
-    @include phones {
-      .section__content {
-        padding: 15px 0;
-      }
-      .section__text {
-        font-size: 17px;
-      }
-      .section__title {
-        font-size: 23px;
-      }
-    }
-  }
-
-  &.section4 {
-    .section__content {
-      margin-right: 50px;
-      max-width: 50%;
-    }
-
-    .section__text {
-      font-size: 38px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .section__subtitle {
-      color: $info-h;
-      font-size: 41px;
-      margin-bottom: 40px;
-    }
-
-    .options__list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .options__item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-      &:hover {
-        .options__item-text {
-          transform: translateX(10px);
-        }
-      }
-    }
-
-    .options__item-icon {
-      margin-right: 15px;
-
-    }
-
-    .options__item-text {
-      font-size: 27px;
-      color: $secondary;
-      transition: .3s;
-    }
-
-    .section__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-right: -30px;
-      margin-bottom: 50px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .section__item {
-      width: calc((100% - 90px) / 3);
-      margin-right: 30px;
-      margin-bottom: 30px;
-      box-shadow: 6px 10px 25px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      background-color: #fff;
-      overflow: hidden;
-      transition: .3s;
-
-      &.min-shadow {
-        box-shadow: 0px 6.74px 6.74px rgba(0, 0, 0, 0.08);
-        &:hover {
-          box-shadow: none;
-          background-color: $background;
-        }
-      }
-      &:hover {
-        box-shadow: 8px 12px 30px rgba(0, 0, 0, 0.25);
-      }
-    }
-
-    .section__card {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-
-    .section__card-decor {
-      width: 110px;
-      height: 80px;
-      max-width: 25%;
-      align-self: flex-end;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $info;
-      border-top-right-radius: 10px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-
-
-    .section__card-img {
-      width: 100%;
-      margin-bottom: 15px;
-    }
-
-    .section__card-text {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 25px;
-      text-align: center;
-      height: 58px;
-      padding: 0 10px;
-    }
-
-
-    .section__card-price {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      align-self: flex-end;
-      font-weight: 600;
-      padding-right: 15px;
-      padding-bottom: 10px;
-      justify-content: flex-end;
-      height: 88px;
-
-      del {
-        text-align: right;
-        font-size: 18px;
-        color: $secondary;
-      }
-
-      ins {
-        text-align: right;
-        font-size: 40px;
-        color: $info;
-        text-decoration: none;
-      }
-    }
-
-    .section__info {
-      padding: 25px;
-      padding-left: 74px;
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-
-    .section__info-decor {
-      width: 60px;
-      height: 60px;
-      align-self: flex-end;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $info;
-      border-bottom-right-radius: 10px;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    .section__info-text {
-      font-size: 17px;
-      color: $secondary;
-      font-weight: 600;
-
-      span {
-        color: $info;
-      }
-    }
-
-    &.reverse {
-      .section__content {
-        margin-right: 0;
-      }
-
-      .section__img {
-        margin-right: 50px;
-      }
-    }
-
-    @include laptop {
-      .section__text {
-        font-size: 25px;
-      }
-      .section__subtitle {
-        font-size: 25px;
-        margin-bottom: 20px;
-      }
-      .options__item {
-        margin-bottom: 15px;
-      }
-      .options__item-text {
-        font-size: 20px;
-      }
-      .options__item-icon {
-        margin-right: 10px;
-        width: 15px;
-        height: 15px;
-      }
-      .section__item {
-        width: calc((100% - 60px) / 2);
-      }
-    }
-    @include tablets {
-      .section__row {
-        flex-direction: column-reverse;
-      }
-      .section__content {
-        margin-right: 0;
-        max-width: 100%;
-        align-self: flex-start;
-      }
-      .section__img {
-        margin-bottom: 20px;
-      }
-      .section__list {
-        margin-right: -20px;
-        margin-bottom: 30px;
-      }
-      .section__item {
-        margin-right: 20px;
-        margin-bottom: 20px;
-
-        &.min-shadow {
-          width: 80%;
-        }
-      }
-      .section__card-price {
-        padding-bottom: 10px;
-        height: 64px;
-
-        del {
-          font-size: 15px;
-        }
-
-        ins {
-          font-size: 30px;
-        }
-      }
-      .section__card-text {
-        font-size: 20px;
-        margin-bottom: 10px;
-        height: 48px;
-      }
-      .section__card-decor {
-        height: 64px;
-      }
-      .section__card-decor-pic {
-        max-width: 50%;
-      }
-      &.reverse {
-        .section__row {
-          flex-direction: column;
-        }
-        .section__img {
-          margin-right: 0;
-        }
-      }
-    }
-    @include phones {
-      .section__info {
-        padding: 10px;
-        padding-left: 70px;
-      }
-      .section__text {
-        font-size: 17px;
-      }
-      .section__list {
-        margin-right: 0;
-        margin-bottom: 30px;
-      }
-      .section__item {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-        &.min-shadow {
-          width: 100%;
-        }
-
-      }
-    }
-  }
-
-  &.section5 {
-    .section__text {
-      font-size: 38px;
-      color: $secondary;
-    }
-
-    .section__img {
-      margin-right: 30px;
-    }
-
-    .section__content {
-      max-width: 50%;
-    }
-
-    .section__subtitle {
-      font-size: 54px;
-      margin-bottom: 25px;
-    }
-
-    &.reverse {
-      .section__img {
-        margin-right: 0;
-      }
-
-      .section__content {
-        margin-right: 30px;
-      }
-    }
-
-    @include laptop {
-      .section__text {
-        font-size: 25px;
-      }
-      .section__subtitle {
-        font-size: 33px;
-        margin-bottom: 20px;
-      }
-    }
-    @include tablets {
-      .section__content {
-        max-width: 80%;
-      }
-      .section__text {
-        font-size: 17px;
-      }
-      .section__subtitle {
-        font-size: 25px;
-        margin-bottom: 20px;
-        font-weight: normal;
-        text-align: center;
-      }
-      .section__img {
-        margin-bottom: 30px;
-        margin-right: 0;
-      }
-      .section__content {
-        margin-right: 0;
-      }
-      &.reverse {
-        .section__row {
-          flex-direction: column-reverse;
-        }
-        .section__content {
-          margin-right: 0;
-        }
-
-      }
-    }
-    @include phones {
-      .section__content {
-        max-width: 100%;
-      }
-      .section__img {
-        margin-bottom: 20px;
-      }
-      .section__subtitle {
-        margin-bottom: 10px;
-      }
-    }
-  }
-
-  &.section6 {
-    .section__list {
-      display: flex;
-      flex-direction: row;
-      margin-right: -30px;
-      margin-bottom: 40px;
-    }
-
-    .section__link {
-      width: calc((100% - 60px) / 2);
-      margin-right: 30px;
-      margin-bottom: 30px;
-      display: block;
-      transition: .3s;
-      &:hover {
-        transform: translateY(-10px);
-      }
-    }
-
-    .section__link-img {
-      width: 100%;
-    }
-
-    .section__text {
-      color: $secondary;
-      font-size: 38px;
-      text-align: center;
-
-      a {
-        transition: .3s;
-        color: #CA2032;
-        &:hover {
-          color: $info;
-        }
-      }
-    }
-
-    @include laptop {
-      .section__text {
-        font-size: 25px;
-      }
-
-    }
-    @include tablets {
-      .section__list {
-        margin-bottom: 0;
-      }
-    }
-    @include phones {
-      .section__text {
-        font-size: 17px;
-        font-weight: 600;
-      }
-      .section__list {
-        margin-right: 0;
-        flex-direction: column;
-        flex-wrap: nowrap;
-      }
-      .section__link {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-  }
 }
 
-.section-wrap {
-  padding: 50px 0;
-  background-color: $info;
-  @include laptop {
-    padding: 30px 0;
+.intro {
+  height: 33.33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.38);
   }
-  @include tablets {
-    padding-top: 20px;
-    padding-bottom: 0;
+
+  @include desktop {
+    height: 634px;
   }
+  @include container {
+    height: 46.41vw;
+  }
+
 }
 
-
-.section__bg {
+.intro__bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -857,86 +60,435 @@
   display: block;
 }
 
-.section__bg-pic {
+.intro__bg-pic {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section__content {
+.intro__decor {
+  position: absolute;
+  left: 60%;
+  bottom: -100px;
+  width: 300px;
+  z-index: 1;
+}
+
+.intro__content {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  justify-content: center;
+  max-width: 830px;
+  margin: 0 auto;
 }
 
-.section__title {
-  font-size: 65px;
-  margin-bottom: 60px;
+.intro__title {
+  width: 100%;
+  font-size: 60px;
   text-align: center;
-  width: 100%;
-  @include laptop {
-    font-size: 40px;
-    margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: $info;
+
+  span {
+    color: $accent;
   }
-  @include phones {
-    font-size: 23px;
-    margin-bottom: 20px;
+
+}
+
+.intro__subtitle {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.intro__text {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro__list {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__item {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-.section__subtitle {
-  width: 100%;
+.intro__button {
+  padding: 14px 18px;
+  border-radius: 56px;
+  background-color: $info;
+  color: #fff;
+  font-size: 18px;
   font-weight: 600;
-  color: $info-h;
+  transition: .3s;
+  display: block;
+
+  &:hover {
+    color: $info;
+    background-color: #fff;
+  }
 }
 
-.section__text {
+.about {
+  .section__text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-right: -30px;
+}
+
+.about__item {
+  width: calc((100% - 150px) / 5);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &:hover {
+    .about__item-img {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.about__item-img {
   width: 100%;
+  padding-bottom: 100%;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 6.74px 6.74px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  transition: .3s;
+  position: relative;
 }
 
-.section__row {
+.about__item-pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.about__item-text {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: $secondary;
+}
+
+.types {
+}
+
+.types__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -50px;
+}
+
+.types__item {
+  width: calc((100% - 150px) / 3);
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.30);
+  border-radius: 20px;
+  transition: .3s;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    //background: linear-gradient(top, rgba(15, 15, 15, 0.6), rgba(0, 0, 0, 0.5));
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  &:hover {
+    box-shadow: none;
+
+    .types__item-text {
+      text-shadow: 0 0 5px #FFDD1B,
+      0 0 8px #FFDD1B,
+      0 0 10px #FFDD1B,
+      0 0 24px #FFDD1B;
+    }
+
+    .types__item-button {
+      opacity: 1;
+    }
+  }
+}
+
+.types__item-img {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.types__item-pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.types__item-text {
+  font-family: 'Russo One', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  z-index: 1;
+  transition: .3s;
+}
+
+.types__item-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: .3s;
+  z-index: 1;
+}
+
+.types__info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  padding: 20px;
+  background: $background-h;
+  border-radius: 10px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.types__info-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  fill: $accent;
+}
 
-  @include tablets {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 40px;
-  }
+.types__info-text {
+  color: $primary;
+  font-size: 18px;
 }
 
 
-.section__img {
-  max-width: 50%;
-  display: block;
-  @include tablets {
-    max-width: 80%;
+.works {
+  margin-bottom: 100px;
+  margin-top: 140px;
+  position: relative;
+  justify-content: flex-start;
+  //padding: calc(50vh - 140px - 100px) 0;
+
+  .container {
+    position: relative;
   }
-  @include phones {
-    max-width: 100%;
+
+  .section__title {
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: calc(50vh - 140px - 100px);
+    margin-bottom: 50px;
+    bottom: 1000px;
+    height: 50px;
+    will-change: transform;
   }
 
 }
 
-.section__img-pic {
+.fixed {
   width: 100%;
-  margin-bottom: 30px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
-a.section__img {
-  transition: .3s;
-  &:hover {
-    transform: scale(1.03);
-  }
+.fixed__block {
+  position: sticky;
+  top: calc(50vh - 140px);
+  height: 561px;
+  will-change: transform;
+  width: 100%;
+  transition: opacity .3s;
+
 }
+
+.fixed__row {
+  background-color: #fff;
+  //padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  //box-shadow: 0px 8px 20px rgba(204, 222, 222, .68);
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.30);
+  height: 450px;
+  display: flex;
+}
+.fixed__content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: $primary;
+}
+
+.fixed__img {
+  width: 50%;
+  height: 100%;
+  //border-radius: 4px;
+  //overflow: hidden;
+}
+
+
+.fixed__img-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+//.works {
+//  margin-bottom: 100px;
+//  margin-top: 140px;
+//  position: relative;
+//  justify-content: flex-start;
+//  //padding: calc(50vh - 140px - 100px) 0;
+//
+//  .container {
+//    position: relative;
+//  }
+//
+//  .section__title {
+//    text-align: center;
+//    width: 100%;
+//    position: sticky;
+//    top: calc(50vh - 140px - 100px);
+//    margin-bottom: 50px;
+//    bottom: 1000px;
+//    height: 50px;
+//    will-change: transform;
+//  }
+//
+//}
+//
+//.fixed {
+//  width: 100%;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
+//
+//}
+//
+//.fixed__row-wrap {
+//  left: 0;
+//  position: sticky;
+//  top: calc(50vh - 140px);
+//  height: 561px;
+//  will-change: transform;
+//}
+//
+//.fixed__row {
+//  justify-content: space-between;
+//  background-color: #fff;
+//  border-radius: 10px;
+//  overflow: hidden;
+//  box-shadow: 0px 8px 20px rgba(204, 222, 222, 0.68);;
+//  height: 360px;
+//}
+//
+//.fixed__content {
+//  width: 50%;
+//  height: 100%;
+//}
+//
+//.fixed__img {
+//  width: 50%;
+//  height: 100%;
+//}
+//
+//.fixed__subtitle {
+//  font-weight: 500;
+//  font-size: 39px;
+//  color: $primary;
+//  text-align: center;
+//  width: 100%;
+//  height: 100%;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  background-color: #fff;
+//  padding: 0 30px;
+//
+//}
+//
+//.fixed__content-wrap {
+//  width: 100%;
+//  height: 100%;
+//}
+//
+//.fixed__img-warp {
+//  width: 100%;
+//  height: 100%;
+//}
+//
+//.fixed__img-pic {
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+
+
+
+

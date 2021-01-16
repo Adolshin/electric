@@ -1,0 +1,26 @@
+@keyframes neon4 {
+  0% {
+    text-shadow:
+      0 0 0 #FFDD1B,
+      0 0 0 #FFDD1B,
+      0 0 0 #FFDD1B,
+      0 0 0 #FFDD1B,
+      0 0 0 #FFDD1B;
+  }
+  50% {
+    text-shadow:
+      0 0 5px #FFDD1B,
+      0 0 8px #FFDD1B,
+      0 0 10px #FFDD1B,
+      0 0 24px #FFDD1B,
+      0 0 72px #FFDD1B;
+  }
+  100% {
+    text-shadow:
+      0 0 3px #FFDD1B,
+      0 0 4px #FFDD1B,
+      0 0 5px #FFDD1B,
+      0 0 6px #FFDD1B,
+      0 0 9px #FFDD1B;
+  }
+}

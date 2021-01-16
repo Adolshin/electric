@@ -69,8 +69,45 @@ ul {
   padding: 0;
 }
 
+.button {
+  padding: 14px 18px;
+  border-radius: 56px;
+  background-color: $info;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s;
+  display: block;
+  &:hover {
+    color: $info;
+    background-color: #fff;
+  }
+}
 
+.section__content {
+  display: flex;
+  flex-direction: column;
+}
 
+.section__title {
+  font-size: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  @include laptop {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  @include phones {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+}
+
+.section__text {
+  width: 100%;
+  font-size: 26px;
+}
 
 
 
