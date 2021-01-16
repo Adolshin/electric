@@ -153,7 +153,7 @@
   }
 }
 
-.about__list {
+.about__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -161,7 +161,7 @@
   margin-right: -30px;
 }
 
-.about__item {
+.about__unit {
   width: calc((100% - 150px) / 5);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -169,15 +169,64 @@
   flex-direction: column;
   align-items: center;
 
-
   &:hover {
-    .about__item-img {
+    .about__unit-img {
       transform: translateY(-10px);
     }
   }
 }
 
-.about__item-img {
+.about__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  counter-reset: myCounter;
+}
+
+.about__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: counter(myCounter);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    counter-increment: myCounter;
+    text-align: center;
+    background-color: $info;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+}
+
+.about__item-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.about-item-text {
+  font-size: 26px;
+}
+
+.about__unit-img {
   width: 100%;
   padding-bottom: 100%;
   margin-bottom: 10px;
@@ -188,7 +237,7 @@
   position: relative;
 }
 
-.about__item-pic {
+.about__unit-pic {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -197,7 +246,7 @@
   transform: translate(-50%, -50%);
 }
 
-.about__item-text {
+.about__unit-text {
   width: 100%;
   text-align: center;
   font-weight: 600;
@@ -310,7 +359,7 @@
 }
 
 .types__info-text {
-  color: $primary;
+
   font-size: 18px;
 }
 
@@ -339,9 +388,11 @@
     height: 50px;
     will-change: transform;
   }
+
   .button {
     position: relative;
     top: -50px;
+
     &:hover {
       background-color: $accent;
       color: #fff;
@@ -349,14 +400,16 @@
   }
 
 }
+
 .works__link {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
-  color: $primary;
+
   transition: .3s;
   position: relative;
   top: -50px;
+
   &:hover {
     color: $accent;
   }
@@ -391,6 +444,7 @@
   height: 450px;
   display: flex;
 }
+
 .fixed__content {
   width: 50%;
   height: 100%;
@@ -403,7 +457,7 @@
 .fixed__title {
   font-size: 30px;
   font-weight: 600;
-  color: $primary;
+
 }
 
 .fixed__img {

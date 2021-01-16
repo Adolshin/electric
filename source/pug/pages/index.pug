@@ -46,70 +46,58 @@ block content
           .section__content
             h2.section__title О компании
             .section__text Мы предоставляем комплекс электромонтажных работ в Москве и Московской области. Принимаем заказы на работу в квартирах, домах, складах, офисных помещениях и иных объектах. У нас работают опытные, квалифицированные электрики, которые быстро справляются с работами любой сложности. Мы выполняем комплекс услуг, начиная от подключения объекта к линии электропередач (ЛЭП), завершая монтажом розетки и выключателя. Профессиональный подход к работе позволяют сократить время и стоимость обслуживания. На все выполненные работы даем гарантию сроком на 2 года.
-            .about__list
-              .about__item
-                .about__item-img
-                  img(src='./assets/img/11.png').about__item-pic
-                .about__item-text Оборудование ведущих мировых производителей
-              .about__item
-                .about__item-img
-                  img(src='./assets/img/12.png').about__item-pic
-                .about__item-text С 2013 года на российском рынке
-              .about__item
-                .about__item-img
-                  img(src='./assets/img/13.png').about__item-pic
-                .about__item-text Профессиональная команда специалистов
-              .about__item
-                .about__item-img
-                  img(src='./assets/img/14.png').about__item-pic
-                .about__item-text Десятки успешно завешенных проектов
-              .about__item
-                .about__item-img
-                  img(src='./assets/img/15.png').about__item-pic
-                .about__item-text Низкие цены
-
-      section.section.types
-        .container
-          .section__content
-            h2.section__title Мы предлагаем любые виды электромонтажных работ любой сложности
-            .types__list
-              a(href="#").types__item
-                .types__item-img
-                  img(src='./assets/img/img1.jpg').types__item-pic
-                .types__item-text В квартирах
-                .types__item-button Подробнее
-              a(href="#").types__item
-                .types__item-img
-                  img(src='./assets/img/img2.jpg').types__item-pic
-                .types__item-text В новостройках
-                .types__item-button Подробнее
-              a(href="#").types__item
-                .types__item-img
-                  img(src='./assets/img/img3.jpg').types__item-pic
-                .types__item-text В деревянных домах и коттеджах. Ретро проводка
-                .types__item-button Подробнее
-              a(href="#").types__item
-                .types__item-img
-                  img(src='./assets/img/img4.jpg').types__item-pic
-                .types__item-text В бюджетных организациях
-                .types__item-button Подробнее
-              a(href="#").types__item
-                .types__item-img
-                  img(src='./assets/img/img5.jpg').types__item-pic
-                .types__item-text Штробление
-                .types__item-button Подробнее
-              a(href="#").types__item
-                .types__item-img
-                  img(src='./assets/img/img6.jpg').types__item-pic
-                .types__item-text Прокладка и замена проводки
-                .types__item-button Подробнее
+            .about__block
+              .about__unit
+                .about__unit-img
+                  img(src='./assets/img/11.png').about__unit-pic
+                .about__unit-text Оборудование ведущих мировых производителей
+              .about__unit
+                .about__unit-img
+                  img(src='./assets/img/12.png').about__unit-pic
+                .about__unit-text С 2013 года на российском рынке
+              .about__unit
+                .about__unit-img
+                  img(src='./assets/img/13.png').about__unit-pic
+                .about__unit-text Профессиональная команда специалистов
+              .about__unit
+                .about__unit-img
+                  img(src='./assets/img/14.png').about__unit-pic
+                .about__unit-text Десятки успешно завешенных проектов
+              .about__unit
+                .about__unit-img
+                  img(src='./assets/img/15.png').about__unit-pic
+                .about__unit-text Низкие цены
 
 
-
-            .types__info
-              svg.types__info-icon
-                use(xlink:href="./assets/img/sprite.svg#info")
-              .types__info-text Важно! В связи с пандемической ситуацией все наши сотрудники работают только в средствах индивидуальной защиты и используют дезинфицирующие средства!
+            ol.about__list
+              li.about__item
+                .about__item-content
+                  .about__item-title Бесплатная консультация
+                  .about-item-text Абсолютно бесплатная консультация! Мы предоставляем возможность выезда мастера на место для оценки стоимости предстоящей работы.
+              li.about__item
+                .about__item-content
+                  .about__item-title Срочный выезд
+                  .about-item-text Мы работаем круглосуточно и выезжаем на срочные выезды без промедления.
+            li.about__item
+              .about__item-content
+                .about__item-title Гарантия на проделанную работу
+                .about-item-text Мы предоставляем гарантию на все проделанные работы 2 года!
+            li.about__item
+              .about__item-content
+                .about__item-title Выезд мастера в день заказа
+                .about-item-text Инженер электрик приедет на объект в согласованное время, внимательно выслушает, даст необходимые рекомендации
+            li.about__item
+              .about__item-content
+                .about__item-title Бесплатная смета за 15 минут
+                .about-item-text После согласования количества электрооборудования укрупненная смета составляется бесплатно за 15 минут
+            li.about__item
+              .about__item-content
+                .about__item-title Минимальные сроки выполнения
+                .about-item-text В жилой квартире скорость выполнения зависит от количества мебели, в среднем, один день – одно помещение
+            li.about__item
+              .about__item-content
+                .about__item-title Оплата по окончании работ
+                .about-item-text Окончательная оплата только после проверки работоспособности и сдачи заказчику
 
       section.section.works.js-section
         .fixed.js-fixed
@@ -170,11 +158,52 @@ block content
                   .fixed__title Описание
                 .fixed__img
                   img.fixed__img-pic(src='./assets/img/works/9.jpg' alt='')
-
-
-
-
         a(href="#").button Посмотреть все
+
+      section.section.types
+        .container
+          .section__content
+            h2.section__title Мы предлагаем любые виды электромонтажных работ любой сложности
+            .types__list
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img1.jpg').types__item-pic
+                .types__item-text В квартирах
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img2.jpg').types__item-pic
+                .types__item-text В новостройках
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img3.jpg').types__item-pic
+                .types__item-text В деревянных домах и коттеджах. Ретро проводка
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img4.jpg').types__item-pic
+                .types__item-text В бюджетных организациях
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img5.jpg').types__item-pic
+                .types__item-text Штробление
+                .types__item-button Подробнее
+              a(href="#").types__item
+                .types__item-img
+                  img(src='./assets/img/img6.jpg').types__item-pic
+                .types__item-text Прокладка и замена проводки
+                .types__item-button Подробнее
+
+
+
+            .types__info
+              svg.types__info-icon
+                use(xlink:href="./assets/img/sprite.svg#info")
+              .types__info-text Важно! В связи с пандемической ситуацией все наши сотрудники работают только в средствах индивидуальной защиты и используют дезинфицирующие средства!
+
+
       //section.section.works.js-section
       //  .fixed.js-fixed
       //    .container
