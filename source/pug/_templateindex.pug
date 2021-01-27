@@ -11,7 +11,7 @@ html
     meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
 
-    link(href="https://fonts.googleapis.com/css2?family=Russo+One&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="./assets/css/foundation%=suffix=%.css%=version=%")
     link(rel="stylesheet" href="./assets/css/main%=suffix=%.css%=version=%")
     script(src="./assets/js/app%=suffix=%.js%=version=%" defer)
@@ -20,5 +20,21 @@ html
 
 
   body
-    block content    
-
+    block content
+    .modal.js-modal
+      .overlay.js-overlay
+      .modal__content
+        svg.modal__close.js-close
+          use(xlink:href="./assets/img/sprite.svg#clear")
+        .modal__title Оставить заявку
+        form(action="").modal__form
+          label.modal__label
+            .modal__label-title Телефон
+            input(type="tel").modal__input
+          label.modal__label
+            .modal__label-title E-mail
+            input(type="email").modal__input
+          label.modal__label
+            .modal__label-title Комментарий
+            textarea.modal__textarea
+          button.modal__button.button Отправить

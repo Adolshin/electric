@@ -8,13 +8,13 @@ block content
       .container
         .header__row
           a(href="#").header__logo
-            img(src='./assets/img/logo2.jpg').header__logo-img
-          nav.header__list
-            a(href="#").header__item О компании
-            a(href="#").header__item Контакты
+            img(src='./assets/img/logo3.jpg').header__logo-img
+          nav.header__list.js-menu
+            //a(href="#").header__item О компании
+            //a(href="#").header__item Контакты
             a(href="#").header__item Прайс
-            a(href="#").header__item Наши работы
-            a(href="#").header__item Вызов мастера
+            a(href="#anchor1").header__item.anchor1 Наши работы
+            a(href="#").header__item.js-modal-open Вызов мастера
           .header__contacts
             a(href="tel:89266308361").header__contacts-item
               svg.header__contacts-icon
@@ -24,6 +24,8 @@ block content
               svg.header__contacts-icon
                 use(xlink:href="./assets/img/sprite.svg#email")
               .header__contacts-text elektrik24.7@mail.ru
+          svg.mobile-menu.js-burger
+            use(xlink:href="./assets/img/sprite.svg#menu")
     main.main
       section.section.intro
         .intro__bg
@@ -32,13 +34,13 @@ block content
         .container.container_bg
           .intro__content
             h1.intro__title ELEKTRIKA #[span VAM]
-            h2.intro__subtitle Электромонтажные работы в Москве и Московской области
-            .intro__text Круглосуточные, срочные вызовы электрика на дом
+            h2.intro__text Электромонтажные работы в Москве и Московской области
             ul.intro__list
+              li.intro__item Круглосуточные, срочные вызовы электрика на дом
               li.intro__item Бесплатная консультация
               li.intro__item Расчет полной стоимости работ
               li.intro__item Гарантия на работу
-            a(href="#").button Оставить заявку
+            a(href="#").button.js-modal-open Оставить заявку
 
 
       section.section.about
@@ -99,7 +101,7 @@ block content
                 .about__item-title Оплата по окончании работ
                 .about-item-text Окончательная оплата только после проверки работоспособности и сдачи заказчику
 
-      section.section.works.js-section
+      section.works.js-section#anchor1
         .fixed.js-fixed
           .container
             h2.section__title.js-title

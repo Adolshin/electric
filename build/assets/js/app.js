@@ -3,17 +3,77 @@
 
 var _scroll = require('./scroll');
 
-var _test = require('./test');
+var _common = require('./common');
 
-(0, _test.test)();
+(0, _common.addClass)('.js-modal-open', '.js-modal');
+(0, _common.removeClass)('.js-close', '.js-modal');
+(0, _common.removeClass)('.js-overlay', '.js-modal');
+
+(0, _common.toggleClass)('.js-burger', '.js-menu');
+
+(0, _common.scrollToAnchor)('.anchor1', '#anchor1');
+
 (0, _scroll.scroll1)();
-// import {removeClass} from './common';
-//
-//
-// fun();
-// removeClass('.js-close', '.overlay');
 
-},{"./scroll":2,"./test":3}],2:[function(require,module,exports){
+},{"./common":2,"./scroll":3}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function toggleClass(sourse, target) {
+  var em = document.querySelector(sourse);
+  var el = document.querySelector(target);
+  em.addEventListener('click', function () {
+    el.classList.toggle('active');
+  });
+}
+
+function removeClass(sourse, target) {
+  var em = document.querySelector(sourse);
+  var el = document.querySelector(target);
+  em.addEventListener('click', function () {
+    el.classList.remove('active');
+  });
+}
+
+function addClass(source, target) {
+  var em = document.querySelectorAll(source);
+  var el = document.querySelector(target);
+  em.forEach(function (item) {
+    item.addEventListener('click', function () {
+      el.classList.add('active');
+    });
+  });
+}
+
+function scrollToAnchor(source, target) {
+  var em = document.querySelector(source);
+  var el = document.querySelector(target);
+  var elemOffset = el.getBoundingClientRect().top;
+  var pageOffset = document.documentElement.getBoundingClientRect().top;
+  em.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: elemOffset - pageOffset - 400, behavior: 'smooth' });
+  });
+}
+
+// let Scroll = (el) => {
+//     const item = el.getAttribute('class');
+//
+//     window.scrollTo({top: top - offset, behavior: 'smooth'});
+//
+// };
+// console.log(this.parentElement);
+// Scroll(this);
+
+exports.toggleClass = toggleClass;
+exports.removeClass = removeClass;
+exports.addClass = addClass;
+exports.scrollToAnchor = scrollToAnchor;
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -45,7 +105,7 @@ function scroll1() {
   function counterScroll(elem) {
     var deltaY = delta();
     // eslint-disable-next-line no-console
-    console.log(deltaY);
+    // console.log(deltaY);
     elem.forEach(function (item, index, array) {
       var elemOffsetScroll = item.getBoundingClientRect().top;
       if (elemOffset[8] <= windowHeight / 2 - 140) {
@@ -100,18 +160,6 @@ function scroll1() {
 }
 
 exports.scroll1 = scroll1;
-
-},{}],3:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-function test() {
-  // eslint-disable-next-line no-console
-  console.log('start');
-}
-exports.test = test;
 
 },{}]},{},[1])
 

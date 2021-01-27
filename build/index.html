@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Condensed:wght@700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/app.js" defer></script>
@@ -17,8 +17,11 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__row"><a class="header__logo" href="#"><img class="header__logo-img" src="./assets/img/logo2.jpg"></a>
-            <nav class="header__list"><a class="header__item" href="#">О компании</a><a class="header__item" href="#">Контакты</a><a class="header__item" href="#">Прайс</a><a class="header__item" href="#">Наши работы</a><a class="header__item" href="#">Вызов мастера</a></nav>
+          <div class="header__row"><a class="header__logo" href="#"><img class="header__logo-img" src="./assets/img/logo3.jpg"></a>
+            <nav class="header__list js-menu">
+              <!--a(href="#").header__item О компании-->
+              <!--a(href="#").header__item Контакты--><a class="header__item" href="#">Прайс</a><a class="header__item anchor1" href="#anchor1">Наши работы</a><a class="header__item js-modal-open" href="#">Вызов мастера</a>
+            </nav>
             <div class="header__contacts"><a class="header__contacts-item" href="tel:89266308361">
                 <svg class="header__contacts-icon">
                   <use xlink:href="./assets/img/sprite.svg#phone"></use>
@@ -28,6 +31,9 @@
                   <use xlink:href="./assets/img/sprite.svg#email"></use>
                 </svg>
                 <div class="header__contacts-text">elektrik24.7@mail.ru</div></a></div>
+            <svg class="mobile-menu js-burger">
+              <use xlink:href="./assets/img/sprite.svg#menu"></use>
+            </svg>
           </div>
         </div>
       </header>
@@ -37,13 +43,13 @@
           <div class="container container_bg">
             <div class="intro__content">
               <h1 class="intro__title">ELEKTRIKA <span>VAM</span></h1>
-              <h2 class="intro__subtitle">Электромонтажные работы в Москве и Московской области</h2>
-              <div class="intro__text">Круглосуточные, срочные вызовы электрика на дом</div>
+              <h2 class="intro__text">Электромонтажные работы в Москве и Московской области</h2>
               <ul class="intro__list">
+                <li class="intro__item">Круглосуточные, срочные вызовы электрика на дом</li>
                 <li class="intro__item">Бесплатная консультация</li>
                 <li class="intro__item">Расчет полной стоимости работ</li>
                 <li class="intro__item">Гарантия на работу</li>
-              </ul><a class="button" href="#">Оставить заявку</a>
+              </ul><a class="button js-modal-open" href="#">Оставить заявку</a>
             </div>
           </div>
         </section>
@@ -121,7 +127,7 @@
             </div>
           </div>
         </section>
-        <section class="section works js-section">
+        <section class="works js-section" id="anchor1">
           <div class="fixed js-fixed">
             <div class="container">
               <h2 class="section__title js-title"><span>Наши работы</span></h2>
@@ -328,6 +334,30 @@
       </footer>
       <div class="footer__block">
         <div class="intro__title">ELEKTRIKA <span>VAM</span></div>
+      </div>
+    </div>
+    <div class="modal js-modal">
+      <div class="overlay js-overlay"></div>
+      <div class="modal__content">
+        <svg class="modal__close js-close">
+          <use xlink:href="./assets/img/sprite.svg#clear"></use>
+        </svg>
+        <div class="modal__title">Оставить заявку</div>
+        <form class="modal__form" action="">
+          <label class="modal__label">
+            <div class="modal__label-title">Телефон</div>
+            <input class="modal__input" type="tel">
+          </label>
+          <label class="modal__label">
+            <div class="modal__label-title">E-mail</div>
+            <input class="modal__input" type="email">
+          </label>
+          <label class="modal__label">
+            <div class="modal__label-title">Комментарий</div>
+            <textarea class="modal__textarea"></textarea>
+          </label>
+          <button class="modal__button button">Отправить</button>
+        </form>
       </div>
     </div>
   </body>

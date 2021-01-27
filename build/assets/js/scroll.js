@@ -24,7 +24,7 @@ function scroll1() {
   function counterScroll (elem) {
     let deltaY = delta();
     // eslint-disable-next-line no-console
-    console.log(deltaY);
+    // console.log(deltaY);
     elem.forEach(function (item, index, array) {
       let elemOffsetScroll = item.getBoundingClientRect().top;
       if (elemOffset[8] <= windowHeight/2 - 140) {
