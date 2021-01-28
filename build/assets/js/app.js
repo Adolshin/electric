@@ -55,7 +55,7 @@ function scrollToAnchor(source, target) {
   var pageOffset = document.documentElement.getBoundingClientRect().top;
   em.addEventListener('click', function (e) {
     e.preventDefault();
-    window.scrollTo({ top: elemOffset - pageOffset - 400, behavior: 'smooth' });
+    window.scrollTo({ top: elemOffset - pageOffset, behavior: 'smooth' });
   });
 }
 
