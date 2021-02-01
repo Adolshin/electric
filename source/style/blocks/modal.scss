@@ -42,7 +42,6 @@
   z-index: 1;
   background-color: #fff;
   border-radius: 4px;
-  overflow: hidden;
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -53,7 +52,8 @@
     height: 100%;
     border-radius: 0;
     justify-content: center;
-    overflow: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
 }
