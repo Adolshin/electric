@@ -31,17 +31,96 @@ body {
   position: relative;
   min-width: 320px;
   background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 .main {
   width: 100%;
+  background-color: $background;
+  padding-bottom: 100px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   @include tablets {
     padding-top: 60px;
-
+    padding-bottom: 70px;
   }
   @include phones {
     padding-top: 50px;
   }
 }
+
+.page {
+  padding-top: 70px;
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  @include tablets {
+    padding-top: 90px;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  .section__title {
+    color: #fff;
+    text-align: left;
+
+  }
+  .section__text {
+    color: #fff;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.58);
+  }
+  &:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &.page_apartment {
+    &:before {
+      background-image: url("../img/bg2.jpg");
+    }
+  }
+  &.page_building {
+    &:before {
+      background-image: url("../img/bg3.jpg");
+    }
+  }
+  &.page_cottage {
+    &:before {
+      background-image: url("../img/bg4.jpg");
+    }
+  }
+  &.page_organization {
+    &:before {
+      background-image: url("../img/bg5.jpg");
+    }
+  }
+  &.page_chipping {
+    &:before {
+      background-image: url("../img/bg6.jpg");
+    }
+  }
+
+}
+
 
 .container {
   width: 1366px;
@@ -50,6 +129,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
   &.container_bg {
     position: relative;
     z-index: 1;
@@ -60,6 +140,7 @@ body {
   }
 
 }
+
 
 *,
 *::before,
@@ -85,6 +166,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -101,10 +186,12 @@ ul {
   display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+
   &:hover {
     color: $info;
     background-color: #fff;
   }
+
   @include tablets {
     font-size: 16px;
   }
@@ -125,7 +212,6 @@ ul {
   margin-bottom: 40px;
   text-align: center;
   width: 100%;
-  color: $primary;
   @include laptop {
     font-size: 40px;
     margin-bottom: 30px;
@@ -138,12 +224,58 @@ ul {
     margin-bottom: 20px;
   }
 }
+.section__subtitle {
+  font-size: 35px;
+  margin-bottom: 30px;
+  width: 100%;
+  color: #fff;
+  @include laptop {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  @include tablets {
+    font-size: 22px;
+  }
+  @include phones {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
 
 .section__text {
   width: 100%;
-  color: $primary;
+  margin-bottom: 70px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include tablets {
+    margin-bottom: 50px;
+  }
+  @include phones {
+    margin-bottom: 30px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
 }
 
+.block {
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 30px 20px;
+  position: relative;
+  z-index: 1;
+}
 
 
 input {

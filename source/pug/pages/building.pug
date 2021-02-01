@@ -1,0 +1,47 @@
+extends ../_templateindex
+
+block variables
+  - var title = 'В новостройках'
+
+block content
+  .wrapper
+    header.header
+      .container
+        .header__row
+          a(href="./index.html").header__logo
+            img(src='./assets/img/logo3.jpg').header__logo-img
+          nav.header__list.js-menu
+            a(href="#").header__item Прайс
+            a(href="#").header__item.js-modal-open Вызов мастера
+          .header__contacts
+            a(href="tel:89266308361").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#phone")
+                .header__contacts-text 8 (926) 630 83 61
+            a(href="mailto:elektrik24.7@mail.ru").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#email")
+              .header__contacts-text elektrik24.7@mail.ru
+          svg.mobile-menu.js-burger
+            use(xlink:href="./assets/img/sprite.svg#menu")
+    main.main.page.page_building
+      .container
+        .blocks
+          h1.section__title Электромонтаж в новостройках Электромонтаж в панельных, кирпичных, монолитно-кирпичных новостройках
+          .section__text
+            p Жилищное строительство в Москве наращивает темпы. Дома растут как грибы во всех районах города. Строительные компании выкупают территории под коммерческое и частную застройку.
+            p Ведется строительство торгово – развлекательных комплексов, офисной и жилой недвижимости. Электромонтаж в новостройках является одним из направление деятельности компании «ЭлектрикаВам».
+            p Разводка кабелей и проводов во вновь возводимых зданиях, монтаж вводно –распределительных устройств, главных распределительных, этажных, квартирных и групповых щитов. Протяжка электрических стояков, установка розеток, выключателей, систем защиты и автоматики.
+            p При новом строительстве мы выполняем весь комплекс электромонтажных работ с соблюдением СНиПов и ПУЭ (правила устройства электроустановок).
+
+    footer.footer
+      .container
+        .footer__row
+          .footer__col
+            .footer__col-title Контакты
+            ul.footer__list
+              li.footer__item Москва, Московская область
+              li.footer__item #[a(href='tel:+79266308361') +7 (926) 630 83 61]
+              li.footer__item #[a(href='mailto:elektrik24.7@mail.ru') elektrik24.7@mail.ru]
+      .footer__block
+        .intro__title ELEKTRIKA #[span VAM]

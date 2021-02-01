@@ -1,0 +1,48 @@
+extends ../_templateindex
+
+block variables
+  - var title = 'В организациях'
+
+block content
+  .wrapper
+    header.header
+      .container
+        .header__row
+          a(href="./index.html").header__logo
+            img(src='./assets/img/logo3.jpg').header__logo-img
+          nav.header__list.js-menu
+            a(href="#").header__item Прайс
+            a(href="#").header__item.js-modal-open Вызов мастера
+          .header__contacts
+            a(href="tel:89266308361").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#phone")
+                .header__contacts-text 8 (926) 630 83 61
+            a(href="mailto:elektrik24.7@mail.ru").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#email")
+              .header__contacts-text elektrik24.7@mail.ru
+          svg.mobile-menu.js-burger
+            use(xlink:href="./assets/img/sprite.svg#menu")
+    main.main.page.page_organization
+      .container
+        .blocks
+          h1.section__title Электромонтаж в бюджетных организациях
+          h2.section__subtitle Электромонтаж в школах, больницах, детских садах, государственных учреждениях
+          .section__text
+            p Здания школ, детских садов и прочих бюджетных организаций имеют определенный срок эксплуатации до капитального ремонта. В большинстве случаев это сроки давно вышли, дальнейшее использование подобных помещений может быть опасно для жизни и здоровья.
+            p Поэтому местные администрации и федеральное правительство выделяют средства на капитальный ремонт зданий и электромонтажные работы в бюджетных организациях. Выделенные средства идут на замену коммуникаций, труб, кабелей, электрических щитов, экспертизу и ремонт несущих конструкций и прочий электромонтаж.
+            p Обновление оборудования, создание и продвижение современных технологий. Ни одна из этих систем не может работать без качественного электропитания. Напряжение с хорошими характеристиками невозможно получить на некачественной электропроводке.
+
+
+    footer.footer
+      .container
+        .footer__row
+          .footer__col
+            .footer__col-title Контакты
+            ul.footer__list
+              li.footer__item Москва, Московская область
+              li.footer__item #[a(href='tel:+79266308361') +7 (926) 630 83 61]
+              li.footer__item #[a(href='mailto:elektrik24.7@mail.ru') elektrik24.7@mail.ru]
+      .footer__block
+        .intro__title ELEKTRIKA #[span VAM]

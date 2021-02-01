@@ -22,16 +22,20 @@
 .header__row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  //justify-content: space-between;
+  @include tablets {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   height: 80px;
   display: block;
-  margin-right: 156px;
-  @include laptop {
-    margin-right: 120px;
-  }
+  margin-right: 40px;
+  //margin-right: 156px;
+  //@include laptop {
+  //  margin-right: 120px;
+  //}
   @include tablets {
     margin-right: 0;
     height: 60px;
@@ -61,6 +65,7 @@
 .header__list {
   display: flex;
   align-items: center;
+  margin-right: auto;
   @include tablets {
     position: absolute;
     top: 100%;

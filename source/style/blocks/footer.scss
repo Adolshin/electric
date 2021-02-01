@@ -1,6 +1,8 @@
 .footer {
   width: 100%;
   background-color: $primary;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__row {

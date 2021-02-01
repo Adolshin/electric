@@ -1,0 +1,48 @@
+extends ../_templateindex
+
+block variables
+  - var title = 'В квартирах'
+
+block content
+  .wrapper
+    header.header
+      .container
+        .header__row
+          a(href="./index.html").header__logo
+            img(src='./assets/img/logo3.jpg').header__logo-img
+          nav.header__list.js-menu
+            //a(href="#").header__item О компании
+            //a(href="#").header__item Контакты
+            a(href="#").header__item Прайс
+            a(href="#").header__item.js-modal-open Вызов мастера
+          .header__contacts
+            a(href="tel:89266308361").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#phone")
+                .header__contacts-text 8 (926) 630 83 61
+            a(href="mailto:elektrik24.7@mail.ru").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#email")
+              .header__contacts-text elektrik24.7@mail.ru
+          svg.mobile-menu.js-burger
+            use(xlink:href="./assets/img/sprite.svg#menu")
+    main.main.page.page_apartment
+      .container
+        .blocks
+          h1.section__title Электромонтаж в квартирах под ключ
+          .section__text
+            p С электромонтажом квартир ситуация аналогична коттеджам. Ввод в квартиру делает строительная компания возводившая дом, даже прокладывается типовая проводка. Сегодня никто не хочет жить как в СССР, с одинаковой мебелью, кухонными гарнитурами.
+            p Каждый человек хочет индивидуальности и комфорта, по своему расположить диваны и «горки», поставить телевизор туда, куда хочется, а не туда где есть розетка. Стандартная проводка конечно не подходит, в своей квартире каждый выполняет электромонтажные работы индивидуально.
+            p Подключение дополнительного оборудования, установка и монтаж бытовой техники, системы вентиляции и кондиционирования. Все это современные стандарты качественного и комфортного жилья. Электромонтаж в Московской квартире должны выполнять профессионалы.
+
+    footer.footer
+      .container
+        .footer__row
+          .footer__col
+            .footer__col-title Контакты
+            ul.footer__list
+              li.footer__item Москва, Московская область
+              li.footer__item #[a(href='tel:+79266308361') +7 (926) 630 83 61]
+              li.footer__item #[a(href='mailto:elektrik24.7@mail.ru') elektrik24.7@mail.ru]
+      .footer__block
+        .intro__title ELEKTRIKA #[span VAM]
