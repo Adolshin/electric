@@ -6,6 +6,6 @@ module.exports = function() {
     $.gulp.watch('./source/style/**/*.scss', $.gulp.series('sass'));
     $.gulp.watch('./source/pug/**/*.pug', $.gulp.series('pug'));
     $.gulp.watch('./source/images/**/*.*', $.gulp.series('copy:image'));
-    $.gulp.watch('./source/js/**/*.js', $.gulp.series('copy:js'));
+    // $.gulp.watch('./source/js/**/*.js', $.gulp.series('copy:js'));
   });
 };

@@ -1,4 +1,5 @@
 import {scroll1} from './scroll';
+import {acco} from './acco';
 
 import {toggleClass, removeClass,addClass,scrollToAnchor} from './common';
 
@@ -12,5 +13,6 @@ toggleClass('.js-burger', '.js-menu');
 scrollToAnchor('.anchor1','#anchor1');
 
 scroll1();
+acco();
 
 

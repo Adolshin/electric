@@ -1,0 +1,683 @@
+extends ../_templateindex
+
+block variables
+  - var title = 'В организациях'
+
+block content
+  .wrapper
+    header.header
+      .container
+        .header__row
+          a(href="./index.html").header__logo
+            img(src='./assets/img/logo3.jpg').header__logo-img
+          nav.header__list.js-menu
+            a(href="#").header__item.js-modal-open Вызов мастера
+          .header__contacts
+            a(href="tel:89266308361").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#phone")
+                .header__contacts-text 8 (926) 630 83 61
+            a(href="mailto:elektrik24.7@mail.ru").header__contacts-item
+              svg.header__contacts-icon
+                use(xlink:href="./assets/img/sprite.svg#email")
+              .header__contacts-text elektrik24.7@mail.ru
+          svg.mobile-menu.js-burger
+            use(xlink:href="./assets/img/sprite.svg#menu")
+    main.main.price
+      .container
+        h1.section__title Прайс-лист
+        ul.acco.js-acco
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Установка розеток
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма розетки в подрозетник
+                .acco__item-content-price от 160#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма выключателя в подрозетник
+                .acco__item-content-price от 160#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Высверливание отверстий под установку подрозетника
+                .acco__item-content-price от 130#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка наружной розетки
+                .acco__item-content-price 200#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка наружного выключателя
+                .acco__item-content-price 200#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка розетки для электроплиты
+                .acco__item-content-price от 250#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка слаботочной розетки
+                .acco__item-content-price 170#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Замена электрической точки в старом подрозетнике
+                .acco__item-content-price 170#[span ₽]./шт.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Подключение вилки для электроплиты (220В/380В)
+                .acco__item-content-price от 250#[span ₽]./шт.
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Установка выключателей
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма выключателя в подрозетник
+                .acco__item-content-price 160#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма проходного одноклавишного выключателя в подрозетник
+                .acco__item-content-price 250#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма влагозаного выключателя в подрозетник
+                .acco__item-content-price 160#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма проходного двуклавишного выключателя в подрозетник
+                .acco__item-content-price 300#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма проходного трехклавишного выключателя в подрозетник
+                .acco__item-content-price 350#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка механизма диммера (реостата) в подрозетник
+                .acco__item-content-price 200#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка наружного выключателя
+                .acco__item-content-price 200#[span ₽]./шт
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Монтаж распаечной (распределительной) коробки
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж наружной распаечной коробки для открытой электропроводки
+                .acco__item-content-price 100#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж внутренней распаечной коробки (гипсе/кирпич/бетон)
+                .acco__item-content-price 200/220/300#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Соединение проводов в распаечной коробке- скрутка
+                .acco__item-content-price 50#[span ₽]./ед
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Соединение проводов в распаечной коробке- скрутка + пайка
+                .acco__item-content-price 100#[span ₽]./ед
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Соединение проводов в распаечной коробке- скрутка +сварка
+                .acco__item-content-price 100#[span ₽]./ед
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Соединение проводов в распаечной коробке- опресовка медными гильзами
+                .acco__item-content-price 60#[span ₽]./ед
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Соединение проводов в распаечной коробкепри помощи клемников WAGO
+                .acco__item-content-price 30#[span ₽]./ед
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Сверление отверстия в стене под подрозетники
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Высверливание отверстий под установку подрозетника, глубиной до 45 мм (гипс/кирпич/бетон)
+                .acco__item-content-price 130/140/200#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Высверливание отверстий под установку подрозетника, глубиной до 70 мм (гипс/кирпич/бетон)
+                .acco__item-content-price 140/170/250#[span ₽]./шт
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Установка подрозетников в стену
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Вмазка подрозетника в готовое отверстие в кирпич, бетон, газобетон
+                .acco__item-content-price 60#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж подрозетника в готовое отверстие в гипсокартоне
+                .acco__item-content-price 40#[span ₽]./шт
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Штробление стен под проводку (цена за метр)
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в бетоне размером до 20х20 мм.
+                .acco__item-content-price 260#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в бетоне размером до 40х20 мм.
+                .acco__item-content-price 300#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в бетоне размером до 40х40 мм.
+                .acco__item-content-price 450#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в бетоне размером до 70х40 мм.
+                .acco__item-content-price 700#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в бетоне размером до 100х40 мм.
+                .acco__item-content-price 900#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в кирпиче, пенобетоне, гипсе размером до 20х20 мм.
+                .acco__item-content-price 170#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в кирпиче, пенобетоне, гипсе размером до 40х20 мм.
+                .acco__item-content-price 230#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в кирпиче, пенобетоне, гипсе размером до 40х40 мм.
+                .acco__item-content-price 280#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в кирпиче, пенобетоне, гипсе размером до 70х40 мм.
+                .acco__item-content-price 350#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление стен под электропроводку в кирпиче, пенобетоне, гипсе размером до 100х40 мм.
+                .acco__item-content-price 400#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Штробление потолка под электропроводку до 20х20 мм.
+                .acco__item-content-price 300#[span ₽]./м.п.
+
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Сквозное сверление стен для протяжки кабеля
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление стены в пеноблоке, гипсе до 20мм
+                .acco__item-content-price 3#[span ₽]./см
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление стены в кирпиче до 20мм
+                .acco__item-content-price 4#[span ₽]./см
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление стены в бетоне до 20мм
+                .acco__item-content-price 10#[span ₽]./см
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление стены в пеноблоке, гипсе до 32мм
+                .acco__item-content-price 4#[span ₽]./см
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление стены в кирпиче до 32мм
+                .acco__item-content-price 5#[span ₽]./см
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление стены в бетоне до 32мм
+                .acco__item-content-price 11#[span ₽]./см
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Установка люстр и светильников
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка настенного светильника, бра
+                .acco__item-content-price от 300#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка люстры с креплением к потолку
+                .acco__item-content-price от 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж крюка для потолочной люстры
+                .acco__item-content-price 170#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж усиленного крюка на анкерном болте для тяжелой потолочной люстры
+                .acco__item-content-price 250#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сборка простой люстры
+                .acco__item-content-price 230#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка светильника точечного в готовое отверстие
+                .acco__item-content-price 250#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Сверление отверстий под установку точечного светильника в реечном потолке
+                .acco__item-content-price 200#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка трековой системы оповещения (шинной, рельсовой)
+                .acco__item-content-price 750#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка и подключение потолочного светильника "Армстронг"
+                .acco__item-content-price 300#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка стабилизатора лампового
+                .acco__item-content-price 250#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж трансформатора
+                .acco__item-content-price 150#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж датчика движения
+                .acco__item-content-price 300#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж временного освещения
+                .acco__item-content-price 30#[span ₽]./шт
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Монтаж светодиодной ленты
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж на стену светодиодной ленты (одноцветной)
+                .acco__item-content-price от 150#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж на потолок светодиодной ленты (одноцветной)
+                .acco__item-content-price от 200#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж на стену светодиодной ленты RGB, RGB+W (многоцветной)
+                .acco__item-content-price от 250#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж на потолок светодиодной ленты RGB, RGB+W (многоцветной)
+                .acco__item-content-price от 300#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж светодиодной ленты в декоративном плинтусе
+                .acco__item-content-price от 400#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Подсветка кухонной рабочей зоны
+                .acco__item-content-price от 350#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка алюминиевого профиля
+                .acco__item-content-price от 350#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж блока управления
+                .acco__item-content-price от 450#[span ₽]./м.п.
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж блока усилителя RGB
+                .acco__item-content-price от 450#[span ₽]./м.п.
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Монтаж бокса электрощита внутреннего
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text на 6 модулей врезка (ГКЛ/кирпич/бетон)
+                .acco__item-content-price 1100/1200/1500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text на 12 модулей врезка (ГКЛ/кирпич/бетон)
+                .acco__item-content-price 1200/1600/1900#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text на 18 модулей врезка (ГКЛ/кирпич/бетон)
+                .acco__item-content-price 1300/2000/2200#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text на 24 модулей врезка (ГКЛ/кирпич/бетон)
+                .acco__item-content-price 1500/2200/2500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text на 36 модулей врезка (ГКЛ/кирпич/бетон)
+                .acco__item-content-price 2000/2500/3100#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text на 54 модулей врезка (ГКЛ/кирпич/бетон)
+                .acco__item-content-price 2300/3100/4100#[span ₽]./шт
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Монтаж электрощитового оборудования
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж рубильника на DIN рейку
+                .acco__item-content-price 170#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка автомата однополюсного DIN на рейку
+                .acco__item-content-price 170#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка автомата двуполюсного на DIN рейку
+                .acco__item-content-price 220#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка автомата трехполюсного на DIN рейку
+                .acco__item-content-price 220#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка реле времени на DIN рейку
+                .acco__item-content-price 260#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка УЗО, диф. автомата двуполюсного на DIN рейку
+                .acco__item-content-price 320#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка УЗО, диф. автомата четырехполюсного на DIN рейку
+                .acco__item-content-price 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка УЗМ (устройство заное многофункциональное) на DIN рейку
+                .acco__item-content-price 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка УЗИП (устройство защиты от импульсных перенапряжений-2 полюсный на DIN рейку
+                .acco__item-content-price 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка УЗИП (устройство защиты от импульсных перенапряжений-4 полюсный на DIN рейку
+                .acco__item-content-price 700#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка однофазного магнитного пускателя на DIN рейку
+                .acco__item-content-price 400#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка УЗОН (устройство защиты от обрыва с нуля) на DIN рейку
+                .acco__item-content-price 700#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка однофазного магнитного пускателя на DIN рейку
+                .acco__item-content-price 400#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка трехфазного магнитного пускателя на DIN рейку
+                .acco__item-content-price 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Реле автоматического переключения на DIN рейку
+                .acco__item-content-price 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка светового индикатора 3-х фаз
+                .acco__item-content-price 500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка трансформатора тока
+                .acco__item-content-price 700#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка крос модуля
+                .acco__item-content-price 170#[span ₽]./шт
+          li.acco__item.js-acco-item
+            .acco__item-link
+              h3.acco__item-title Слаботочные работы
+              .acco__item-img
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                svg.acco__item-pic
+                  use(xlink:href='./assets/img/sprite.svg#add')
+            .acco__item-content
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж телевизионного краба
+                .acco__item-content-price 300#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Подключение телевизионного, телефонного кабеля к главному щиту
+                .acco__item-content-price 200#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Монтаж штекера телевизионного без пайки
+                .acco__item-content-price 150#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка скрытой видеокамеры
+                .acco__item-content-price 2600#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка модульной, купольной видеокамеры
+                .acco__item-content-price 1000#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка видеодомофона
+                .acco__item-content-price 1500#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Подключение блока сопряжения с подъездным домофоном
+                .acco__item-content-price 900#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка и настройка видеорегистратора
+                .acco__item-content-price 3000#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка трубки аудиодомофона
+                .acco__item-content-price 400#[span ₽]./шт
+              .acco__item-content-row
+                svg.acco__item-content-img
+                  use(xlink:href='./assets/img/sprite.svg#remove')
+                .acco__item-content-text Установка слаботочной розетки
+                .acco__item-content-price 170#[span ₽]./шт
+        ul.price__works
+          li.price__works-item
+            .price__works-img
+              img(src='./assets/img/image1.jpg' alt='1-комнатная квартира').price__works-pic
+            .price__works-content
+              .price__works-title 1-комнатная квартира
+              .price__works-text Стоимость работ от 15 000#[span ₽]
+              .price__works-text Стоимость материалов от 8 000#[span ₽]
+              .price__works-text Сроки выполнения работ 2-5 дней
+          li.price__works-item
+            .price__works-img
+              img(src='./assets/img/image2.jpg' alt='2-комнатная квартира').price__works-pic
+            .price__works-content
+              .price__works-title 2-комнатная квартира
+              .price__works-text Стоимость работ от 20 000#[span ₽]
+              .price__works-text Стоимость материалов от 13 000#[span ₽]
+              .price__works-text Сроки выполнения работ 3-7 дней
+          li.price__works-item
+            .price__works-img
+              img(src='./assets/img/image3.jpg' alt='3-комнатная квартира').price__works-pic
+            .price__works-content
+              .price__works-title 3-комнатная квартира
+              .price__works-text Стоимость работ от 24 000#[span ₽]
+              .price__works-text Стоимость материалов от 18 000#[span ₽]
+              .price__works-text Сроки выполнения работ 3-9 дней
+          li.price__works-item
+            .price__works-img
+              img(src='./assets/img/image4.jpg' alt='Кухня').price__works-pic
+            .price__works-content
+              .price__works-title Кухня
+              .price__works-text Стоимость работ от 5 000#[span ₽]
+              .price__works-text Стоимость материалов от 3 000#[span ₽]
+              .price__works-text Сроки выполнения работ 1-2 дней
+
+    footer.footer
+      .container
+        .footer__row
+          .footer__col
+            .footer__col-title Контакты
+            ul.footer__list
+              li.footer__item Москва, Московская область
+              li.footer__item #[a(href='tel:+79266308361') +7 (926) 630 83 61]
+              li.footer__item #[a(href='mailto:elektrik24.7@mail.ru') elektrik24.7@mail.ru]
+      .footer__block
+        .intro__title ELEKTRIKA #[span VAM]

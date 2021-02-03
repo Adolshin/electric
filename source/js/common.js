@@ -26,14 +26,18 @@ function addClass(source, target) {
 }
 
 function scrollToAnchor(source, target) {
+
   const em = document.querySelector(source);
   const el = document.querySelector(target);
-  let elemOffset = el.getBoundingClientRect().top;
-  let pageOffset = document.documentElement.getBoundingClientRect().top;
-  em.addEventListener('click', function (e) {
-    e.preventDefault();
-    window.scrollTo({top: elemOffset - pageOffset, behavior: 'smooth'});
-  });
+  if (el) {
+    let elemOffset = el.getBoundingClientRect().top;
+    let pageOffset = document.documentElement.getBoundingClientRect().top;
+    em.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({top: elemOffset - pageOffset, behavior: 'smooth'});
+    });
+  }
+
 
 }
 

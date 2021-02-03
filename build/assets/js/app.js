@@ -1,7 +1,30 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function acco() {
+  var acco = document.querySelectorAll('.js-acco');
+  acco.forEach(function (item) {
+    var accoItem = item.querySelectorAll('.js-acco-item');
+
+    accoItem.forEach(function (item) {
+
+      item.children[0].addEventListener('click', function () {
+        item.classList.toggle('active');
+      });
+    });
+  });
+}
+exports.acco = acco;
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
 var _scroll = require('./scroll');
+
+var _acco = require('./acco');
 
 var _common = require('./common');
 
@@ -14,8 +37,9 @@ var _common = require('./common');
 (0, _common.scrollToAnchor)('.anchor1', '#anchor1');
 
 (0, _scroll.scroll1)();
+(0, _acco.acco)();
 
-},{"./common":2,"./scroll":3}],2:[function(require,module,exports){
+},{"./acco":1,"./common":3,"./scroll":4}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -49,14 +73,17 @@ function addClass(source, target) {
 }
 
 function scrollToAnchor(source, target) {
+
   var em = document.querySelector(source);
   var el = document.querySelector(target);
-  var elemOffset = el.getBoundingClientRect().top;
-  var pageOffset = document.documentElement.getBoundingClientRect().top;
-  em.addEventListener('click', function (e) {
-    e.preventDefault();
-    window.scrollTo({ top: elemOffset - pageOffset, behavior: 'smooth' });
-  });
+  if (el) {
+    var elemOffset = el.getBoundingClientRect().top;
+    var pageOffset = document.documentElement.getBoundingClientRect().top;
+    em.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: elemOffset - pageOffset, behavior: 'smooth' });
+    });
+  }
 }
 
 // let Scroll = (el) => {
@@ -73,7 +100,7 @@ exports.removeClass = removeClass;
 exports.addClass = addClass;
 exports.scrollToAnchor = scrollToAnchor;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -161,7 +188,7 @@ function scroll1() {
 
 exports.scroll1 = scroll1;
 
-},{}]},{},[1])
+},{}]},{},[2])
 
 
 //# sourceMappingURL=maps/app.js.map

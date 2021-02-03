@@ -49,6 +49,7 @@ body {
   }
   @include phones {
     padding-top: 50px;
+    padding-bottom: 40px;
   }
 }
 
@@ -59,6 +60,9 @@ body {
   justify-content: center;
   @include tablets {
     padding-top: 90px;
+  }
+  @include phones {
+    padding-top: 70px;
   }
   .container {
     position: relative;
@@ -118,8 +122,8 @@ body {
       background-image: url("../img/bg6.jpg");
     }
   }
-
 }
+
 
 
 .container {
