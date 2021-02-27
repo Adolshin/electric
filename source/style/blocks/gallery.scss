@@ -1,0 +1,57 @@
+.gallery {
+  padding-top: 70px;
+  overflow: hidden;
+  //background: $background-h;
+
+  @include tablets {
+    padding-top: 90px;
+  }
+  @include phones {
+    padding-top: 70px;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+
+  @include laptop {
+    margin-right: -20px;
+  }
+}
+
+.gallery__item {
+  width: calc((100% - 120px)/4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  @include desktop {
+    width: calc((100% - 90px)/3);
+  }
+  @include laptop {
+    width: calc((100% - 40px)/2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  @include phones {
+    width: 100%;
+  }
+
+}
+
+.gallery__img {
+  width: 100%;
+  padding-bottom: 75%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, .3);
+
+}
+.gallery__img-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

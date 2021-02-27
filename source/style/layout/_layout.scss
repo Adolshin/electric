@@ -138,6 +138,9 @@ body {
     position: relative;
     z-index: 1;
   }
+  &.container_full {
+    width: 100%;
+  }
 
   @include phones {
     padding: 0 10px;
