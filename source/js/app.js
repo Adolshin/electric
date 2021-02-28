@@ -2,6 +2,7 @@ import {scroll1} from './scroll';
 import {acco} from './acco';
 
 import {toggleClass, removeClass,addClass,scrollToAnchor} from './common';
+import {submit} from './form';
 
 
 addClass('.js-modal-open', '.js-modal');
@@ -14,5 +15,7 @@ scrollToAnchor('.anchor1','#anchor1');
 
 scroll1();
 acco();
+
+submit();
 
 

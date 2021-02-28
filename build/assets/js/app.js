@@ -28,6 +28,8 @@ var _acco = require('./acco');
 
 var _common = require('./common');
 
+var _form = require('./form');
+
 (0, _common.addClass)('.js-modal-open', '.js-modal');
 (0, _common.removeClass)('.js-close', '.js-modal');
 (0, _common.removeClass)('.js-overlay', '.js-modal');
@@ -39,7 +41,9 @@ var _common = require('./common');
 (0, _scroll.scroll1)();
 (0, _acco.acco)();
 
-},{"./acco":1,"./common":3,"./scroll":4}],3:[function(require,module,exports){
+(0, _form.submit)();
+
+},{"./acco":1,"./common":3,"./form":4,"./scroll":5}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -101,6 +105,67 @@ exports.addClass = addClass;
 exports.scrollToAnchor = scrollToAnchor;
 
 },{}],4:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+function submit() {
+  // $('.order-btn_close').click(function (e) {
+  //   e.preventDefault();
+  //   // $('body').removeClass('body-active-menu');
+  //   $('.order-overlay').removeClass('order-overlay_open');
+  //   $('body').removeClass('disabled-onepage-scroll-order');
+  //   $('.message').remove();
+  // });
+  var btn = document.querySelector('.order-btn');
+  var modal = document.querySelector('.js-modal');
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    $('#mail-form').submit();
+    modal.classList.remove('active');
+  });
+  // $('.order-btn').click(function (e) {
+  //   e.preventDefault();
+  //   $('#mail-form').submit();
+  //
+  // });
+  var submitForm = function submitForm(ev) {
+    ev.preventDefault();
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action');
+
+    var request = $.ajax({
+      type: 'POST',
+      url: url,
+      data: data,
+      dataType: 'JSON'
+    });
+
+    request.done(function (msg) {
+      var mes = msg.mes,
+          status = msg.status;
+      if (status === 'OK') {
+        // $('.order-overlay__text').append('<p class="message">' + mes + '</p>');
+        alert(mes);
+      } else {
+        // $('.order-overlay__text').append('<p class="message">' + mes + '</p>');
+        alert(mes);
+      }
+    });
+    request.fail(function (jqXHR, textStatus) {
+      alert("Request failed:" + textStatus);
+    });
+  };
+  $('#mail-form').on('submit', submitForm);
+}
+
+exports.submit = submit;
+
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
