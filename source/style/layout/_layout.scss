@@ -122,6 +122,11 @@ body {
       background-image: url("../img/bg6.jpg");
     }
   }
+  &.page_wiring {
+    &:before {
+      background-image: url("../img/bg7.jpg");
+    }
+  }
 }
 
 
